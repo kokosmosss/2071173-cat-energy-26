@@ -4,28 +4,28 @@
 @import "page-main.scss";
 @import "contacts.scss";
 @import "button.scss";
-
+// хедер
 @import "header/page-header.scss";
 @import "header/page-nav.scss";
 @import "header/nav-list.scss";
-
+// футер
 @import "footer/page-footer.scss";
 @import "footer/social.scss";
 @import "footer/copyright.scss";
-
+// главная
 @import "index/page-promo.scss";
 @import "index/packs.scss";
 @import "index/pack.scss";
 @import "index/feachures.scss";
 @import "index/example.scss";
-
+// каталог
 @import "catalog/catalog.scss";
 @import "catalog/catalog-adds.scss";
 @import "catalog/card.scss";
 @import "catalog/card-adds.scss";
 @import "catalog/present-block.scss";
 @import "catalog/show-more.scss";
-
+// форма
 @import "form/program-form.scss";
 @import "form/form-group.scss";
 @import "form/field.scss";
@@ -33,5 +33,3 @@
 @import "form/form-checkbox.scss";
 @import "form/checkbox.scss";
 @import "form/radio.scss";
-
-

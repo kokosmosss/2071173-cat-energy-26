@@ -1,3 +1,4 @@
+// пока не применяю его, для наглядности
 // .visually-hidden {
 //   position: absolute;
 //   width: 1px;
@@ -15,22 +16,15 @@
   list-style: none;
 }
 
-.clear-link {
-  text-decoration: none;
-  border: none;
-  outline: none;
-}
-
-$grey-100: #F2F2F2;
-$grey-200: #EBEBEB;
-$grey-300: #E5E5E5;
-$grey-350: #EAEAEA;
-$grey-400: #CDCDCD;
+$grey-100: #f2f2f2;
+$grey-200: #ebebeb;
+$grey-300: #e5e5e5;
+$grey-350: #eaeaea;
+$grey-400: #cdcdcd;
 $grey-500: #666666;
 $grey-600: #444444;
 $grey-700: #222222;
 $grey-800: #111111;
-$green-300: #68B738;
-$green-400: #5EAA2F;
-$pink-400: #FF8282;
-
+$green-300: #68b738;
+$green-400: #5eaa2f;
+$pink-400: #ff8282;
