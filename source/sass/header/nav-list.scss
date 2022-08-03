@@ -1,3 +1,11 @@
 .nav-list {
   @extend .clear-list;
 }
+
+.nav-list__link {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
