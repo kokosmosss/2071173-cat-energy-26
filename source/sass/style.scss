@@ -1,18 +1,37 @@
 @import "fonts.scss";
 @import "variables-and-patterns.scss";
 @import "page.scss";
+@import "page-main.scss";
+@import "contacts.scss";
+@import "button.scss";
+
 @import "header/page-header.scss";
 @import "header/page-nav.scss";
 @import "header/nav-list.scss";
+
+@import "footer/page-footer.scss";
+@import "footer/social.scss";
+@import "footer/copyright.scss";
+
 @import "index/page-promo.scss";
 @import "index/packs.scss";
 @import "index/pack.scss";
 @import "index/feachures.scss";
 @import "index/example.scss";
-@import "footer/page-footer.scss";
-@import "footer/social.scss";
-@import "footer/copyright.scss";
-@import "contacts.scss";
-@import "button.scss";
 
-// Начните писать стили здесь
+@import "catalog/catalog.scss";
+@import "catalog/catalog-adds.scss";
+@import "catalog/card.scss";
+@import "catalog/card-adds.scss";
+@import "catalog/present-block.scss";
+@import "catalog/show-more.scss";
+
+@import "form/program-form.scss";
+@import "form/form-group.scss";
+@import "form/field.scss";
+@import "form/form-radio.scss";
+@import "form/form-checkbox.scss";
+@import "form/checkbox.scss";
+@import "form/radio.scss";
+
+
