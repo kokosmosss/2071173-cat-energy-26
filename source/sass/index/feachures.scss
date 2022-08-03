@@ -1,0 +1,12 @@
+.feachures__list {
+  @extend .clear-list;
+}
+
+.feachures__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.feachures__description {
+  color: $grey-600;
+}

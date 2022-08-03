@@ -1,0 +1,33 @@
+.example {
+  background-color: $grey-350;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__param-description {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  }
+
+.example__param-term {
+  font-size: 12px;
+  line-height: 12px;
+  color: $grey-600;
+  text-transform: lowercase;
+}
+
+.example__price {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__range-before, .example__range-after {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

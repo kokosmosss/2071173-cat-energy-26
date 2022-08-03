@@ -1,0 +1,30 @@
+// .visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   padding: 0;
+//   border: 0;
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
+
+.clear-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+$grey-100: #F2F2F2;
+$grey-200: #EBEBEB;
+$grey-300: #E5E5E5;
+$grey-350: #EAEAEA;
+$grey-400: #CDCDCD;
+$grey-500: #666666;
+$grey-600: #444444;
+$grey-700: #222222;
+$grey-800: #111111;
+$green-300: #68B738;
+$green-400: #5EAA2F;
+$pink-400: #FF8282;
+

@@ -1,0 +1,11 @@
+.packs__list {
+  @extend .clear-list;
+}
+
+.packs__item {
+  background-color: $grey-100;
+}
+
+.pack__description {
+  color: $grey-600;
+}
