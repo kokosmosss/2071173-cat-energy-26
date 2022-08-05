@@ -5,6 +5,11 @@
 .example__title {
   font-size: 36px;
   line-height: 40px;
+  font-family: $oswald;
+}
+
+.example__param {
+  font-family: $oswald;
 }
 
 .example__param-description {
@@ -21,14 +26,19 @@
 }
 
 .example__price {
+  font-family: $oswald;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-.example__range-before,
-.example__range-after {
+.example__range-scale {
+  font-family: $oswald;
+}
+
+.example__range {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  font-family: $oswald;
 }

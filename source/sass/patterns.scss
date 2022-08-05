@@ -16,15 +16,8 @@
   list-style: none;
 }
 
-$grey-100: #f2f2f2;
-$grey-200: #ebebeb;
-$grey-300: #e5e5e5;
-$grey-350: #eaeaea;
-$grey-400: #cdcdcd;
-$grey-500: #666666;
-$grey-600: #444444;
-$grey-700: #222222;
-$grey-800: #111111;
-$green-300: #68b738;
-$green-400: #5eaa2f;
-$pink-400: #ff8282;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
