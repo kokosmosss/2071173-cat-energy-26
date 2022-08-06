@@ -3,45 +3,46 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo logo" href="index.html">
-      <img class="logo__image" src="img/logo-primary.svg" width="34" height="38"
-        alt="Логотип Cat Energy.">
-      <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Cat Energy.">
-    </a>
-    <nav class="page-nav">
-      <button class="page-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="page-nav__wrapper">
-        <ul class="page-nav__list nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--current">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="program.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <header class="page-header">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__image" src="img/logo-primary.svg" width="34" height="38" alt="Логотип Cat Energy.">
+        <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+      </a>
+      <nav class="page-nav">
+        <button class="page-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="page-nav__wrapper">
+          <ul class="page-nav__list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-list__link--current">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   <main class="page-main">
     <section class="catalog">
-      <h1 class="page-main__title catalog__title">Каталог продукции</h1>
-      <ul class="catalog__list">
+      <h1 class="catalog__title page-main__title">Каталог продукции</h1>
+      <ul class="catalog__list clear-list">
         <li class="catalog__item card">
           <h2 class="card__title"> Cat Energy PRO 500 г</h2>
           <dl class="card__specs">
@@ -135,7 +136,7 @@
     </section>
     <section class="catalog-adds">
       <h2 class="catalog-adds__title">Дополнительные товары</h2>
-      <ul class="catalog-adds__list">
+      <ul class="catalog-adds__list clear-list">
         <li class="catalog-adds__item card-adds">
           <h3 class="card-adds__title">Сахарозаменитель</h3>
           <p class="card-adds__specs">
@@ -169,7 +170,7 @@
           <a class="button button--add card-adds__button" href="#">Заказать</a>
         </li>
       </ul>
-      <div class="present-block">
+      <div class="catalog-adds__present-block present-block">
         <p class="present-block__description">Закажите все
           и получите чехол для
           кота в подарок!
@@ -196,7 +197,7 @@
       <img class="logo__text" src="img/logo-text.svg" width="128" height="24" alt="Cat Energy.">
     </a>
     <div class="page-footer__social social">
-      <ul class="social__list">
+      <ul class="social__list clear-list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в Вконтакте</span>

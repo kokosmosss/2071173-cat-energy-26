@@ -1,0 +1,16 @@
+.page-promo {
+  color: #ffffff;
+}
+
+.page-promo__intro {
+  font-family: $oswald;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.page-promo__background {
+  background-image: url("../img/greencat.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: $green-300;
+}
