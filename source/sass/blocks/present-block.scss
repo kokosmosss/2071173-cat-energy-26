@@ -1,5 +1,21 @@
+.present-block {
+  padding: 186px 61px 43px 58px;
+  text-align: center;
+
+  @media (min-width: $medium) {
+    padding: 71px 124px 69px 422px;
+    text-align: start;
+  }
+
+  @media (min-width: $large) {
+    padding: 0;
+    text-align: center;
+  }
+}
+
 .present-block__description {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  margin: 0;
 }
