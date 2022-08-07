@@ -2,8 +2,24 @@
   font-size: 36px;
   line-height: 40px;
   font-family: $oswald;
+  font-weight: 400;
 }
 
 .feachures__description {
   color: $grey-600;
+}
+
+.feachures__list {
+  display: grid;
+  gap: 24px;
+
+  @media (min-width: $medium) {
+    grid-template-columns: 1fr 1fr;
+    gap: 137px;
+  }
+
+  @media (min-width: $large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 79px;
+  }
 }

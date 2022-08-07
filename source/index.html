@@ -9,16 +9,18 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo logo">
-      <img class="logo__image" src="img/logo-primary.svg" width="34" height="38" alt="Логотип Cat Energy.">
-      <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Cat Energy.">
-    </a>
-    <nav class="page-nav">
-      <button class="page-nav__toggle" type="button">
+  <header class="page__header page-header">
+    <div class="page-header__menu-container">
+      <a class="page-header__logo logo">
+        <img class="logo__image" src="img/logo-primary.svg" width="34" height="38" alt="Логотип Cat Energy.">
+        <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+      </a>
+      <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="page-nav__list nav-list">
+    </div>
+    <nav class="page-nav">
+      <ul class="page-nav__list nav-list clear-list">
         <li class="nav-list__item">
           <a class="nav-list__link nav-list__link--current">
             Главная
@@ -45,7 +47,13 @@
       </div>
       <a class="button button--program page-promo__button" href="program.html">Подобрать программу</a>
     </div>
-    <section class="packs">
+    <!-- <div class="page-promo page-promo--background">
+      <h1 class="page-promo__title page-main__title">Функциональное питание для котов</h1>
+      <p class="page-promo__intro">Занялся собой? Займись котом!</p>
+      <a class="button button--program page-promo__button" href="program.html">Подобрать программу</a>
+    </div> -->
+
+    <section class="page-main__section packs">
       <h2 class="visually-hidden">Варианты программ</h2>
       <ul class="packs__list clear-list">
         <li class="packs__item packs__item--slim pack">
@@ -66,7 +74,7 @@
         </li>
       </ul>
     </section>
-    <section class="feachures">
+    <section class="page-main__section feachures">
       <h2 class="feachures__title">Как это работает</h2>
       <ol class="feachures__list clear-list">
         <li class="feachures__item feachures__item--leaf">
@@ -93,42 +101,46 @@
         </li>
       </ol>
     </section>
-    <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих
-        тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <dl class="example__param">
-        <dt class="example__param-term">Снижение веса</dt>
-        <dd class="example__param-description">5 кг</dd>
-        <dt class="example__param-term">Затрачено времени</dt>
-        <dd class="example__param-description">60 дней</dd>
-      </dl>
-      <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-      <img class="example__cat-img" src="img/fat-cat.png" width="280" height="232" alt="Толстый кот до смены питания.">
+    <section class="page-main__section example">
+      <div class="example__text-wrapper">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих
+          тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <dl class="example__param">
+          <dt class="example__param-term">Снижение веса</dt>
+          <dd class="example__param-description">5 кг</dd>
+          <dt class="example__param-term">Затрачено времени</dt>
+          <dd class="example__param-description">60 дней</dd>
+        </dl>
+        <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
+      </div>
       <div class="example__range-scale">
+        <img class="example__cat-img" src="img/fat-cat.png" width="280" height="232" alt="Толстый кот до смены питания.">
         <button class="example__range" type="button">Было</button>
         <div class="example__range-bar">
           <button class="example__range-toggle" type="button">
             <span class="visually-hidden">Посмотреть изменения кота при смене питания.</span>
           </button>
-          <button class="example__range" type="button">Стало</button>
+        <button class="example__range" type="button">Стало</button>
         </div>
       </div>
     </section>
   </main>
   <aside class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
-    <p class="contacts__intro">
-      Приглашаем
-      к сотрудничеству
-      дилеров!
-    </p>
-    <address class="contacts__address">
-      ул. Большая
-      Конюшенная, д. 19/8
-      Санкт-Петербург
-    </address>
+    <div class="contacts__text">
+      <p class="contacts__intro">
+        Приглашаем
+        к сотрудничеству
+        дилеров!
+      </p>
+      <address class="contacts__address">
+        ул. Большая
+        Конюшенная, д. 19/8
+        Санкт-Петербург
+      </address>
+    </div>
     <iframe class="contacts__map"></iframe>
   </aside>
   <footer class="page-footer">
@@ -138,17 +150,17 @@
     <div class="page-footer__social social">
       <ul class="social__list clear-list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"> vk
             <span class="visually-hidden">Мы в Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"> yt
             <span class="visually-hidden">Мы в Ютубе</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"> tg
             <span class="visually-hidden">Мы в Телеграме</span>
           </a>
         </li>

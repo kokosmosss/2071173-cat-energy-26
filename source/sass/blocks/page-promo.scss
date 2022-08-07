@@ -1,16 +1,67 @@
+// я сильно зависла над этим блоком, есть разные враианты, но ни одного нормального.
+// див.page-promo__background я добавила, чтобы сделать картинку с зеленым фоном, на случай если она не загрузится + чтобы перемещать этот класс в другое место, когда будет двигаться картинка на десктопе. но если я делаю обертку, то я не могу задать паддинг на весь блок (фон пересстает тянутся), приходится давать паддинги для каждого элемента. так все вроде работает, но запись громоздкая. если делаю через отдельный класс-модификатор фоновую картинку - не могу задать контрастный фон , т.к. он на весь блок идет и не могу кнопку отделить.
+
 .page-promo {
-  color: #ffffff;
+  color: $white;
 }
 
 .page-promo__intro {
   font-family: $oswald;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0 62px 164px 60px;
+
+  @media (min-width: $medium) {
+    color: $black;
+    text-align: start;
+    padding: 0 366px 49px 119px;
+  }
 }
+
+// .page-promo--background {
+//   background-image: url("../img/greencat.png");
+//   background-repeat: no-repeat;
+//   background-size: 100%;
+//   background-color: $green-300;
+
+//   @media (min-width: $medium) {
+//       background: none;
+//     }
+// }
 
 .page-promo__background {
   background-image: url("../img/greencat.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 302px;
   background-color: $green-300;
+
+  @media (min-width: $medium) {
+    background: none;
+  }
+}
+
+.page-promo__title {
+  text-align: center;
+  padding: 27px 35px 25px;
+  margin: 0;
+
+  @media (min-width: $medium) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    text-align: start;
+    padding: 62px 237px 41px 117px;
+  }
+}
+
+.page-promo__button {
+  margin: 138px auto 0;
+  width: 280px;
+
+  @media (min-width: $medium) {
+    margin: 0 404px 526px 120px;
+    width: 244px;
+  }
 }

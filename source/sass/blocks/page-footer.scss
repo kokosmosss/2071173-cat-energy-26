@@ -1,3 +1,22 @@
 .page-footer {
   background-color: $grey-100;
+  padding: 39px 20px 25px;
+  text-align: center;
+
+  @media (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 58px 30px 55px;
+  }
+
+  @media (min-width: $large) {
+    padding: 63px 110px 62px;
+  }
+
+}
+
+.page-footer__copyright {
+  text-align: start;
 }

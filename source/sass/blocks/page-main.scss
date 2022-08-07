@@ -2,6 +2,7 @@
   font-family: $oswald;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
 }
 
 .page-main__intro {
@@ -11,4 +12,23 @@
 
 .page-main__form {
   font-family: $oswald;
+}
+
+.page-main__promo-background {
+  background-image: url("../img/greencat.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: $green-300;
+}
+
+.page-main__section {
+  padding: 0 20px;
+
+  @media (min-width: $medium) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $medium) {
+    padding: 0 110px;
+  }
 }
