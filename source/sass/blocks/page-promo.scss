@@ -1,6 +1,3 @@
-// я сильно зависла над этим блоком, есть разные враианты, но ни одного нормального.
-// див.page-promo__background я добавила, чтобы сделать картинку с зеленым фоном, на случай если она не загрузится + чтобы перемещать этот класс в другое место, когда будет двигаться картинка на десктопе. но если я делаю обертку, то я не могу задать паддинг на весь блок (фон пересстает тянутся), приходится давать паддинги для каждого элемента. так все вроде работает, но запись громоздкая. если делаю через отдельный класс-модификатор фоновую картинку - не могу задать контрастный фон , т.к. он на весь блок идет и не могу кнопку отделить.
-
 .page-promo {
   color: $white;
 }
@@ -20,27 +17,42 @@
   }
 }
 
-// .page-promo--background {
-//   background-image: url("../img/greencat.png");
-//   background-repeat: no-repeat;
-//   background-size: 100%;
-//   background-color: $green-300;
-
-//   @media (min-width: $medium) {
-//       background: none;
-//     }
-// }
-
-.page-promo__background {
-  background-image: url("../img/greencat.png");
+.page-promo--background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  min-height: 302px;
+  z-index: -1;
+  background-image:
+    linear-gradient(hsl(97 53% 47% / 85%),
+      hsl(97 53% 47% / 85%)),
+      url("../img/background-cat.png");
   background-repeat: no-repeat;
-  background-size: 100% 302px;
-  background-color: $green-300;
+  background-size: 100%;
 
   @media (min-width: $medium) {
     background: none;
   }
 }
+
+.page-promo__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 160px;
+  margin: 0 auto;
+}
+
+// .page-promo__background {
+//   background-image: url("../img/background-cat.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 302px;
+//   background-color: $green-300;
+
+//   @media (min-width: $medium) {
+//     background: none;
+//   }
+// }
 
 .page-promo__title {
   text-align: center;

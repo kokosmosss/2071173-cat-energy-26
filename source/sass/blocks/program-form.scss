@@ -1,3 +1,23 @@
 .program-form__disclaimer {
   line-height: 16px;
 }
+
+.program-form__grid2col {
+  @media (min-width: $medium) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 61px;
+    }
+
+  @media (min-width: $large) {
+    column-gap: 80px;
+    }
+}
+
+.program-form__grid4col {
+  @media (min-width: $large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 81px;
+    }
+}
