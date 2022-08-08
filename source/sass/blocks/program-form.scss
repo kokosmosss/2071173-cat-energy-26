@@ -4,14 +4,14 @@
 
 .program-form__grid2col {
   @media (min-width: $medium) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 61px;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+  }
 
   @media (min-width: $large) {
     column-gap: 80px;
-    }
+  }
 }
 
 .program-form__grid4col {
@@ -19,5 +19,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 81px;
-    }
+  }
 }

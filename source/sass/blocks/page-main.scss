@@ -7,15 +7,11 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-}
 
-.page-main__intro {
-  font-family: $oswald;
-  text-transform: uppercase;
-}
-
-.page-main__form {
-  font-family: $oswald;
+  @media (min-width: $medium) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page-main__promo-background {
@@ -35,4 +31,33 @@
   @media (min-width: $large) {
     padding: 0 110px;
   }
+}
+
+.page-main__form {
+  font-family: $oswald;
+  padding: 27px 20px 32px;
+
+  @media (min-width: $medium) {
+    padding: 65px 70px 72px;
+  }
+
+  @media (min-width: $large) {
+    padding: 77px 110px 82px;
+  }
+}
+
+.page-main__form-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $medium) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.page-main__form-intro {
+  text-transform: uppercase;
 }

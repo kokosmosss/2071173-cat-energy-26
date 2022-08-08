@@ -7,11 +7,11 @@
   gap: 20px;
 
   @media (min-width: $medium) {
-      gap: 30px;
-    }
+    gap: 30px;
+  }
 
-        @media (min-width: $medium) {
-          grid-template-columns: 1fr 1fr;
-          gap:80px;
-        }
+  @media (min-width: $medium) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }

@@ -6,9 +6,9 @@
     padding: 65px 0 82px;
   }
 
-    @media (min-width: $large) {
-      padding: 74px 0 84px;
-    }
+  @media (min-width: $large) {
+    padding: 74px 0 84px;
+  }
 }
 
 .catalog__list {
@@ -18,10 +18,10 @@
   @media (min-width: $medium) {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    }
+  }
 
-    @media (min-width: $large) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 80px 63px;
-    }
+  @media (min-width: $large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px 63px;
+  }
 }

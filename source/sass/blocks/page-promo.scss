@@ -26,7 +26,7 @@
   background-image:
     linear-gradient(hsl(97 53% 47% / 85%),
       hsl(97 53% 47% / 85%)),
-      url("../img/background-cat.png");
+    url("../img/background-cat.png");
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -42,17 +42,6 @@
   top: 160px;
   margin: 0 auto;
 }
-
-// .page-promo__background {
-//   background-image: url("../img/background-cat.png");
-//   background-repeat: no-repeat;
-//   background-size: 100% 302px;
-//   background-color: $green-300;
-
-//   @media (min-width: $medium) {
-//     background: none;
-//   }
-// }
 
 .page-promo__title {
   text-align: center;

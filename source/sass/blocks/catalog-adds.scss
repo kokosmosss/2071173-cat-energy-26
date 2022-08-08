@@ -7,13 +7,13 @@
   margin: 0;
 
   @media (min-width: $medium) {
-      padding: 68px 0 80px;
-    }
-
-    @media (min-width: $large) {
-      padding: 76px 0 81px;
-    }
+    padding: 68px 0 80px;
   }
+
+  @media (min-width: $large) {
+    padding: 76px 0 81px;
+  }
+}
 
 .catalog-adds__present-block {
   background-image: url("../img/present-block.png");
@@ -24,10 +24,10 @@
 
 .catalog-adds__container {
   @media (min-width: $large) {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 86px;
-    }
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 86px;
+  }
 }
 
 .catalog-adds__list {
@@ -38,8 +38,8 @@
   }
 
   @media (min-width: $large) {
-      flex-grow: 1;
-      padding-right: 79px;
-      padding-bottom: 0;
-    }
+    flex-grow: 1;
+    padding-right: 79px;
+    padding-bottom: 0;
+  }
 }

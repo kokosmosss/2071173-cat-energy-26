@@ -1,6 +1,7 @@
 .page-header {
   font-size: 20px;
   line-height: 20px;
+  text-transform: uppercase;
 
   @media (min-width: $medium) {
     display: flex;
@@ -15,5 +16,4 @@
   @media (min-width: $medium) {
     padding: 0;
   }
-
 }

@@ -12,14 +12,17 @@
 .feachures__list {
   display: grid;
   gap: 24px;
+  padding-bottom: 49px;
 
   @media (min-width: $medium) {
     grid-template-columns: 1fr 1fr;
-    gap: 137px;
+    gap: 37px 137px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $large) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 79px;
+    padding-bottom: 69px;
   }
 }
