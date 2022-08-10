@@ -2,11 +2,11 @@
   line-height: 16px;
 }
 
-.program-form__grid2col {
+.program-form__grid2col-medium {
   @media (min-width: $medium) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 61px;
+    column-gap: 60px;
   }
 
   @media (min-width: $large) {
@@ -14,10 +14,10 @@
   }
 }
 
-.program-form__grid4col {
+.program-form__grid4col-large {
   @media (min-width: $large) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 81px;
+    column-gap: 80px;
   }
 }

@@ -12,17 +12,23 @@
 .feachures__list {
   display: grid;
   gap: 24px;
-  padding-bottom: 49px;
+  margin-bottom: 49px;
 
   @media (min-width: $medium) {
-    grid-template-columns: 1fr 1fr;
-    gap: 37px 137px;
-    padding-bottom: 47px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px 60px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $large) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 79px;
-    padding-bottom: 69px;
+    gap: 76px;
+    margin-bottom: 69px;
+  }
+}
+
+.feachures__item {
+  @media (min-width: $medium) {
+    grid-column: span 2;
   }
 }

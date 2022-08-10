@@ -7,58 +7,74 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  padding: 0 62px 164px 60px;
+  margin: 0 0 29px 0;
+  padding: 0 60px;
 
   @media (min-width: $medium) {
     color: $black;
     text-align: start;
-    padding: 0 366px 49px 119px;
+    margin: 0 0 49px 0;
+    padding: 0 366px 0 119px;
   }
 }
 
-.page-promo--background::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  min-height: 302px;
-  z-index: -1;
+//  ну вот такое вот... но не получается теперь картинку по центру, вылезает зеленка сверху
+.page-promo__background {
   background-image:
-    linear-gradient(hsl(97 53% 47% / 85%),
-      hsl(97 53% 47% / 85%)),
+    linear-gradient(to top, $white 24%, hsl(97 53% 47% / 85%) 24%),
     url("../img/background-cat.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  background-color: $green-300;
 
   @media (min-width: $medium) {
     background: none;
   }
 }
+// .page-promo--background::before {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   min-height: 302px;
+//   z-index: -1;
+//   background-image:
+//     linear-gradient(hsl(97 53% 47% / 85%),
+//       hsl(97 53% 47% / 85%)),
+//     url("../img/background-cat.png");
+//   background-repeat: no-repeat;
+//   background-size: 100%;
 
+//   @media (min-width: $medium) {
+//     background: none;
+//   }
+// }
 .page-promo__image {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 160px;
+  display: block;
   margin: 0 auto;
+
+  @media (min-width: $medium) {
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .page-promo__title {
   text-align: center;
-  padding: 27px 35px 25px;
-  margin: 0;
+  padding: 27px 35px 0;
+  margin: 0 0 25px 0;
 
   @media (min-width: $medium) {
     font-size: 60px;
     line-height: 60px;
     color: $black;
     text-align: start;
-    padding: 62px 237px 41px 117px;
+    padding: 62px 237px 0 117px;
+    margin: 0 0 41px 0;
   }
 }
 
 .page-promo__button {
-  margin: 138px auto 0;
+  margin: 32px auto 0;
   width: 280px;
 
   @media (min-width: $medium) {

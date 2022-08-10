@@ -14,12 +14,6 @@
   }
 }
 
-.page-main__promo-background {
-  background-image: url("../img/greencat.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-color: $green-300;
-}
 
 .page-main__section {
   padding: 20px 20px 0;
@@ -35,14 +29,17 @@
 
 .page-main__form {
   font-family: $oswald;
-  padding: 27px 20px 32px;
+  padding: 27px 20px 0;
+  margin-bottom: 32px;
 
   @media (min-width: $medium) {
-    padding: 65px 70px 72px;
+    padding: 65px 70px 0;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $large) {
-    padding: 77px 110px 82px;
+    padding: 77px 110px 0;
+    margin-bottom: 82px;
   }
 }
 
@@ -50,14 +47,26 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 36px;
 
   @media (min-width: $medium) {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 54px;
+  }
+
+  @media (min-width: $large) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 56px;
   }
 }
 
 .page-main__form-intro {
   text-transform: uppercase;
+  margin: 0 0 38px;
+
+  @media (min-width: $medium) {
+    margin: 0 0 66px;
+  }
 }

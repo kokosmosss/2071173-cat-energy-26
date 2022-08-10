@@ -2,7 +2,10 @@
   background-color: $grey-100;
   padding: 39px 20px 25px;
   text-align: center;
+  width: 100%;
+}
 
+.page-footer__container {
   @media (min-width: $medium) {
     display: flex;
     flex-wrap: wrap;
@@ -18,4 +21,14 @@
 
 .page-footer__copyright {
   text-align: start;
+  flex-basis: 30%;
+}
+
+.page-footer__social {
+  flex-basis: 30%;
+  flex-grow: 1;
+}
+
+.page-footer__logo {
+  flex-basis: 30%;
 }

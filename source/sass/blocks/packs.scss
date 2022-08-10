@@ -10,7 +10,7 @@
     gap: 30px;
   }
 
-  @media (min-width: $medium) {
+  @media (min-width: $large) {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
   }

@@ -1,6 +1,8 @@
 .example {
   background-color: $grey-350;
+}
 
+.example__wrapper {
   @media (min-width: $large) {
     display: grid;
     grid-template-columns: 1fr 1fr;

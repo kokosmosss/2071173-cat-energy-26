@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header page-header">
+  <header class="page__header page-header center-container">
     <div class="page-header__menu-container">
       <a class="page-header__logo logo">
         <img class="logo__image" src="img/logo-primary.svg" width="34" height="38" alt="Логотип Cat Energy.">
@@ -40,13 +40,21 @@
     </nav>
   </header>
   <main class="page-main">
-    <div class="page-promo page-promo--background">
+    <div class="page-promo center-container">
+      <div class="page-promo__background">
+        <h1 class="page-promo__title page-main__title">Функциональное питание для котов</h1>
+        <p class="page-promo__intro">Занялся собой? Займись котом!</p>
+        <img class="page-promo__image" src="img/promo.png" width="280" height="270" alt="Корм Cat Energy Pro с курицей.">
+      </div>
+      <a class="button button--program page-promo__button" href="program.html">Подобрать программу</a>
+    </div>
+    <!-- <div class="page-promo page-promo--background">
       <h1 class="page-promo__title page-main__title">Функциональное питание для котов</h1>
       <p class="page-promo__intro">Занялся собой? Займись котом!</p>
       <img class="page-promo__image" src="img/promo.png" width="280" height="270" alt="Корм Cat Energy Pro с курицей.">
       <a class="button button--program page-promo__button" href="program.html">Подобрать программу</a>
-    </div>
-    <section class="page-main__section packs">
+    </div>  -->
+    <section class="page-main__section packs center-container ">
       <h2 class="visually-hidden">Варианты программ</h2>
       <ul class="packs__list clear-list">
         <li class="packs__item packs__item--slim pack">
@@ -67,7 +75,7 @@
         </li>
       </ul>
     </section>
-    <section class="page-main__section feachures">
+    <section class="page-main__section feachures center-container ">
       <h2 class="feachures__title">Как это работает</h2>
       <ol class="feachures__list clear-list">
         <li class="feachures__item feachures__item--leaf">
@@ -94,28 +102,29 @@
         </li>
       </ol>
     </section>
-    <section class="page-main__section example">
-      <div class="example__text-wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих
-          тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="example__param">
-          <dt class="example__param-term">Снижение веса</dt>
-          <dd class="example__param-description">5 кг</dd>
-          <dt class="example__param-term">Затрачено времени</dt>
-          <dd class="example__param-description">60 дней</dd>
-        </dl>
-        <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-      </div>
-      <div class="example__range-scale">
-        <img class="example__cat-img" src="img/fat-cat.png" width="280" height="232" alt="Толстый кот до смены питания.">
-        <button class="example__range" type="button">Было</button>
-        <div class="example__range-bar">
-          <button class="example__range-toggle" type="button">
-            <span class="visually-hidden">Посмотреть изменения кота при смене питания.</span>
-          </button>
-        <button class="example__range" type="button">Стало</button>
+    <section class="example">
+      <div class="page-main__section example__wrapper center-container">
+        <div class="example__text-wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих
+            тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <dl class="example__param">
+            <dt class="example__param-term">Снижение веса</dt>
+            <dd class="example__param-description">5 кг</dd>
+            <dt class="example__param-term">Затрачено времени</dt>
+            <dd class="example__param-description">60 дней</dd>
+          </dl>
+          <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
+        </div>
+        <div class="example__range-scale">
+          <img class="example__cat-img" src="img/fat-cat.png" width="280" height="232"
+            alt="Толстый кот до смены питания.">
+          <div class="example__range-bar">
+            <button class="example__range-toggle" type="button">
+              <span class="visually-hidden">Посмотреть изменения кота при смене питания.</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -137,32 +146,34 @@
     <iframe class="contacts__map"></iframe>
   </aside>
   <footer class="page-footer">
-    <a class="page-footer__logo logo">
-      <img class="logo__text" src="img/logo-text.svg" width="128" height="24" alt="Cat Energy.">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list clear-list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"> vk
-            <span class="visually-hidden">Мы в Вконтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"> yt
-            <span class="visually-hidden">Мы в Ютубе</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"> tg
-            <span class="visually-hidden">Мы в Телеграме</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        HTML Academy
+    <div class="page-footer__container center-container">
+      <a class="page-footer__logo logo">
+        <img class="logo__text" src="img/logo-text.svg" width="128" height="24" alt="Cat Energy.">
       </a>
+      <div class="page-footer__social social">
+        <ul class="social__list clear-list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"> vk
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"> yt
+              <span class="visually-hidden">Мы в Ютубе</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"> tg
+              <span class="visually-hidden">Мы в Телеграме</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+        </a>
+      </div>
     </div>
   </footer>
 </body>

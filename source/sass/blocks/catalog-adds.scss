@@ -24,22 +24,21 @@
 
 .catalog-adds__container {
   @media (min-width: $large) {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 86px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 86px;
   }
 }
 
 .catalog-adds__list {
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 
   @media (min-width: $medium) {
-    padding-bottom: 69px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $large) {
-    flex-grow: 1;
-    padding-right: 79px;
-    padding-bottom: 0;
+    grid-column: span 3;
   }
 }
