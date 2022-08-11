@@ -1,4 +1,20 @@
 .page-header {
   font-size: 20px;
   line-height: 20px;
+  text-transform: uppercase;
+  width: 100%;
+
+  @media (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.page-header__menu-container {
+  padding: 10px 20px 17px;
+
+  @media (min-width: $medium) {
+    padding: 0;
+  }
 }

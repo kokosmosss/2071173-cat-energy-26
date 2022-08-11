@@ -2,10 +2,20 @@
   background-color: $grey-350;
 }
 
+.example__wrapper {
+  @media (min-width: $large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .example__title {
   font-size: 36px;
   line-height: 40px;
   font-family: $oswald;
+  font-weight: 400;
+  margin: 0;
 }
 
 .example__param {

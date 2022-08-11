@@ -1,14 +1,72 @@
+.page-main {
+  position: relative;
+}
+
 .page-main__title {
   font-family: $oswald;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
+
+  @media (min-width: $medium) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
-.page-main__intro {
-  font-family: $oswald;
-  text-transform: uppercase;
+
+.page-main__section {
+  padding: 20px 20px 0;
+
+  @media (min-width: $medium) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $large) {
+    padding: 0 110px;
+  }
 }
 
 .page-main__form {
   font-family: $oswald;
+  padding: 27px 20px 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $medium) {
+    padding: 65px 70px 0;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $large) {
+    padding: 77px 110px 0;
+    margin-bottom: 82px;
+  }
+}
+
+.page-main__form-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0 0 36px;
+
+  @media (min-width: $medium) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 54px;
+  }
+
+  @media (min-width: $large) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 56px;
+  }
+}
+
+.page-main__form-intro {
+  text-transform: uppercase;
+  margin: 0 0 38px;
+
+  @media (min-width: $medium) {
+    margin: 0 0 66px;
+  }
 }

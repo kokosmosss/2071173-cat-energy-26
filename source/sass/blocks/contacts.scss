@@ -1,9 +1,27 @@
+.contacts__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 20px;
+
+  @media (min-width: $medium) {
+    padding: 56px 70px;
+    grid-template-columns: 171px 163px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $large) {
+    padding: 56px 80px;
+    width: 565px;
+  }
+}
+
 .contacts__intro {
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
   color: $grey-800;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .contacts__address {

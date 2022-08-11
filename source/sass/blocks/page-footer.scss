@@ -1,3 +1,34 @@
 .page-footer {
   background-color: $grey-100;
+  padding: 39px 20px 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.page-footer__container {
+  @media (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 58px 30px 55px;
+  }
+
+  @media (min-width: $large) {
+    padding: 63px 110px 62px;
+  }
+}
+
+.page-footer__copyright {
+  text-align: start;
+  flex-basis: 30%;
+}
+
+.page-footer__social {
+  flex-basis: 30%;
+  flex-grow: 1;
+}
+
+.page-footer__logo {
+  flex-basis: 30%;
 }

@@ -1,16 +1,84 @@
 .page-promo {
-  color: #ffffff;
+  color: $white;
 }
 
 .page-promo__intro {
   font-family: $oswald;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 29px 0;
+  padding: 0 60px;
+
+  @media (min-width: $medium) {
+    color: $black;
+    text-align: start;
+    margin: 0 0 49px 0;
+    padding: 0 366px 0 119px;
+  }
 }
 
+//  ну вот такое вот... но не получается теперь картинку по центру, вылезает зеленка сверху
 .page-promo__background {
-  background-image: url("../img/greencat.png");
+  background-image:
+    linear-gradient(to top, $white 24%, hsl(97 53% 47% / 85%) 24%),
+    url("../img/background-cat.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: contain;
   background-color: $green-300;
+
+  @media (min-width: $medium) {
+    background: none;
+  }
+}
+// .page-promo--background::before {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   min-height: 302px;
+//   z-index: -1;
+//   background-image:
+//     linear-gradient(hsl(97 53% 47% / 85%),
+//       hsl(97 53% 47% / 85%)),
+//     url("../img/background-cat.png");
+//   background-repeat: no-repeat;
+//   background-size: 100%;
+
+//   @media (min-width: $medium) {
+//     background: none;
+//   }
+// }
+.page-promo__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $medium) {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.page-promo__title {
+  text-align: center;
+  padding: 27px 35px 0;
+  margin: 0 0 25px 0;
+
+  @media (min-width: $medium) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    text-align: start;
+    padding: 62px 237px 0 117px;
+    margin: 0 0 41px 0;
+  }
+}
+
+.page-promo__button {
+  margin: 32px auto 0;
+  width: 280px;
+
+  @media (min-width: $medium) {
+    margin: 0 404px 526px 120px;
+    width: 244px;
+  }
 }
