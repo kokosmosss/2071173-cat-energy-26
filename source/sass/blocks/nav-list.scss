@@ -1,3 +1,9 @@
+ .nav-list {
+ @media (min-width: $medium) {
+   display: flex;
+   flex-wrap: wrap;
+ }
+}
 .nav-list__link {
   color: $black;
   font-weight: 500;
@@ -6,4 +12,8 @@
   padding: 24px 50px;
   display: block;
   text-align: center;
+
+  @media (min-width: $medium) {
+      padding: 12px;
+    }
 }

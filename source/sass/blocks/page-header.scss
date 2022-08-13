@@ -19,6 +19,7 @@
 
   @media (min-width: $medium) {
     padding: 0;
+    display: block;
   }
 }
 
@@ -33,6 +34,10 @@
   justify-self: end;
   align-self: end;
   position: relative;
+
+  @media (min-width: $medium) {
+      display: none;
+    }
 }
 
 .page-header__toggle::before {
@@ -46,7 +51,27 @@
   box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
 }
 
-// .page-header__toggle--closed {
-//   &.page-header__toggle: before
-// }
+.page-header__toggle--closed {
+  top: 0;
+  left: 0;
 
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: $black;
+  }
+
+        &::before {
+          transform: rotate(45deg);
+          box-shadow: none;
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+}

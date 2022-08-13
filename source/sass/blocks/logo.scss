@@ -3,6 +3,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+
+  // @media (min-width: $medium) {
+  //       display: block;
+  //   }
 }
 
 .logo__text {
