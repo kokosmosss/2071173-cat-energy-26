@@ -3,21 +3,35 @@
   line-height: 40px;
   font-family: $oswald;
   font-weight: 400;
+  margin: 0 0 40px 0;
+
+  @media (min-width: $medium) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 45px 0 32px 0;
+  }
 }
 
 .feachures__description {
   color: $grey-600;
+  margin: 0;
+
+  @media (min-width: $large) {
+    margin-bottom: 57px;
+  }
+
 }
 
 .feachures__list {
   display: grid;
   gap: 24px;
   margin-bottom: 49px;
+  counter-reset: feachures__counter;
 
   @media (min-width: $medium) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 100px 60px;
-    margin-bottom: 47px;
+    gap: 30px 60px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: $large) {
@@ -28,7 +42,76 @@
 }
 
 .feachures__item {
+  display: flex;
+  counter-increment: feachures__counter;
+  position: relative;
+
   @media (min-width: $medium) {
     grid-column: span 2;
+    display: block;
+    min-height: 287px;
+
+  }
+
+  @media (min-width: $large) {
+    min-height: 280px;
+    grid-column: span 1;
+  }
+}
+
+.feachures__item::before {
+  content: "";
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  @media (min-width: $medium) {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 40px 0 32px;
+  }
+}
+
+.feachures__item--leaf::before {
+  background-image: url("../img/icons/leaf.svg");
+}
+
+.feachures__item--water::before {
+  background-image: url("../img/icons/water.svg");
+}
+
+.feachures__item--food::before {
+  background-image: url("../img/icons/food.svg");
+}
+
+.feachures__item--time::before {
+  background-image: url("../img/icons/time.svg");
+}
+
+.feachures__item::after {
+  display: none;
+  content: counter(feachures__counter);
+
+  @media (min-width: $medium) {
+    position: absolute;
+    display: block;
+    width: 112px;
+    height: 280px;
+    font-size: 280px;
+    line-height: 280px;
+    color: $grey-100;
+    top: 0;
+    right: 76px;
+    z-index: -1;
+    text-align: center;
+  }
+
+  @media (min-width: $medium) {
+    right: 28px;
   }
 }

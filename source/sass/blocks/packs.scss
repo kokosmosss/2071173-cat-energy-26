@@ -1,6 +1,58 @@
 .packs__item {
   background-color: $grey-100;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }
+
+.packs__item--slim::before {
+  width: 50px;
+  height: 53px;
+
+  background-image: url("../img/cat-back-sit.svg");
+
+  @media (min-width: $medium) {
+    width: 200px;
+    height: 214px;
+    right: 67px;
+    top: 56px;
+  }
+
+     @media (min-width: $large) {
+       width: 100px;
+       height: 115px;
+       right: auto;
+     }
+
+}
+
+.packs__item--pro::before {
+  width: 67px;
+  height: 50px;
+  left: 9px;
+  top: 25px;
+  background-image: url("../img/cat-back-walk.svg");
+
+
+  @media (min-width: $medium) {
+    width: 268px;
+    height: 200px;
+    left: auto;
+    top: 53px;
+    right: 32px;
+  }
+        @media (min-width: $large) {
+          width: 134px;
+          height: 100px;
+          right: auto;
+        }
+}
+
 
 .packs__list {
   display: grid;

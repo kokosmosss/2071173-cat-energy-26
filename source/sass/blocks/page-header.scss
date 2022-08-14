@@ -19,7 +19,9 @@
 
   @media (min-width: $medium) {
     padding: 0;
-    display: block;
+    max-width: 174px;
+    grid-template-columns: 1fr;
+    min-width: auto;
   }
 }
 

@@ -4,9 +4,10 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
 
-  // @media (min-width: $medium) {
-  //       display: block;
-  //   }
+  @media (min-width: $medium) {
+      min-width: 174px;
+      grid-template-columns: auto 1fr;
+    }
 }
 
 .logo__text {
