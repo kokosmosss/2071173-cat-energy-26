@@ -1,3 +1,7 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__text {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12,6 +16,10 @@
   @media (min-width: $large) {
     padding: 56px 80px;
     width: 565px;
+    position: absolute;
+    background-color: $white;
+    left: 110px;
+    top: 95px;
   }
 }
 
@@ -29,4 +37,15 @@
   line-height: 20px;
   font-style: normal;
   color: $grey-600;
+}
+
+.contacts__map {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $medium) {
+    height: 400px;
+  }
 }

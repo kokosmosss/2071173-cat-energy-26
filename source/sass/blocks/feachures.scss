@@ -96,6 +96,7 @@
 .feachures__item::after {
   display: none;
   content: counter(feachures__counter);
+  font-family: $oswald;
 
   @media (min-width: $medium) {
     position: absolute;

@@ -1,5 +1,17 @@
 .example {
-  background-color: $grey-350;
+  background-image: linear-gradient($grey-350, $grey-350);
+  background-repeat: no-repeat;
+
+  @media (min-width: $medium) {
+    background-size: 100% 384px;
+    background-position: bottom;
+  }
+
+  @media (min-width: $large) {
+    background-size: 100% 462px;
+    background-position: bottom;
+  }
+
 }
 
 .example__wrapper {
@@ -10,29 +22,59 @@
   }
 }
 
+.example__intro {
+  margin: 0 0 20px;
+
+  @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 54px;
+  }
+
+  @media (min-width: $large) {
+    margin: 0 0 69px;
+  }
+}
+
 .example__title {
   font-size: 36px;
   line-height: 40px;
   font-family: $oswald;
   font-weight: 400;
-  margin: 0;
+  margin: 5px 0 40px;
+
+  @media (min-width: $medium) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 63px;
+  }
+
+  @media (min-width: $medium) {
+    margin: 0 0 76px;
+  }
 }
 
 .example__param {
   font-family: $oswald;
+  margin: 0 0 34px;
+
+  @media (min-width: $medium) {
+    margin: 0;
+  }
 }
 
-.example__param-description {
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
-}
+.example__param-wrapper {
+  @media (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+  }
 
-.example__param-term {
-  font-size: 12px;
-  line-height: 12px;
-  color: $grey-600;
-  text-transform: lowercase;
+  @media (min-width: $large) {
+    margin-bottom: 75px;
+  }
 }
 
 .example__price {
@@ -40,6 +82,31 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $large) {
+    span {
+      margin-left: 63px;
+    }
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $medium) {
+      display: block;
+    }
+
+    @media (min-width: $large) {
+      display: none;
+    }
+  }
 }
 
 .example__range-scale {
