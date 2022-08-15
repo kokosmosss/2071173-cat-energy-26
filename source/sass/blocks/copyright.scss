@@ -1,4 +1,27 @@
+.copyright {
+  
+  padding-top: 28px;
+
+  @media (min-width: $medium) {
+    padding-top: 0;
+    }
+}
+
 .copyright__link {
   color: $grey-600;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $medium) {
+      justify-content: end;
+    }
 }
+
+.copyright__link-text {
+  @media (min-width: $medium) {
+    margin-right: 22px;
+  }
+}
+

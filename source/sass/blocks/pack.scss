@@ -7,6 +7,7 @@
 
   @media (min-width: $large) {
     padding-right: 51px;
+    padding-bottom: 60px;
   }
 }
 
@@ -34,18 +35,20 @@
 
 .pack__description {
   color: $grey-600;
-  margin: 0 0 38px 0;
+  padding: 0 0 23px;
+  margin: 0 0 15px;
+  border-bottom: 1px solid $grey-370;
 
   @media (min-width: $medium) {
-    margin: 0 0 48px 0;
-    padding-left: 0;
+    padding: 0;
+    border: none;
+    margin: 0 0 54px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $large) {
-    margin: 0 0 24px 0;
-    padding-left: 0;
+    margin: 0 0 24px;
   }
 }
 

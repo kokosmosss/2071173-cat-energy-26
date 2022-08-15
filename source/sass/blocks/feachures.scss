@@ -8,13 +8,22 @@
   @media (min-width: $medium) {
     font-size: 60px;
     line-height: 60px;
-    margin: 45px 0 32px 0;
+    margin: 49px 0 32px 0;
+  }
+
+  @media (min-width: $large) {
+    margin-top: 72px;
   }
 }
 
 .feachures__description {
   color: $grey-600;
   margin: 0;
+
+  @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   @media (min-width: $large) {
     margin-bottom: 57px;
@@ -31,13 +40,14 @@
   @media (min-width: $medium) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px 60px;
+    padding-bottom: 41px;
     margin-bottom: 43px;
   }
 
   @media (min-width: $large) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 76px;
-    margin-bottom: 69px;
+    margin-bottom: 27px;
   }
 }
 
@@ -107,12 +117,12 @@
     line-height: 280px;
     color: $grey-100;
     top: 0;
-    right: 76px;
+    right: 100px;
     z-index: -1;
     text-align: center;
   }
 
-  @media (min-width: $medium) {
+  @media (min-width: $large) {
     right: 28px;
   }
 }
