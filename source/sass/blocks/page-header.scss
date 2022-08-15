@@ -48,6 +48,7 @@
   }
 }
 
+// я вот тут намудриса с этими рисунками, а дальше вот с этим переключением классов не соображу, можно ли их менять, чтобы кнопка менялась. или лучше сразу на иконки поменять?
 .page-header__toggle::before {
   content: "";
   position: absolute;
@@ -84,16 +85,15 @@
   }
 }
 
-.page-header__nav {
 @media (max-width: 767px) {
+  .page-header__nav {
     position: absolute;
     left: 0;
     width: 100%;
     background-color: $white;
+  }
+
+  .page-header--closed .page-header__nav {
     visibility: hidden;
   }
-}
-
-.page-header__nav--opened {
-  visibility: visible;
 }

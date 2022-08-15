@@ -5,9 +5,9 @@
   align-items: center;
 
   @media (min-width: $medium) {
-      min-width: 174px;
-      grid-template-columns: auto 1fr;
-    }
+    min-width: 174px;
+    grid-template-columns: auto 1fr;
+  }
 }
 
 .logo__text {

@@ -1,10 +1,9 @@
 .copyright {
-  
   padding-top: 28px;
 
   @media (min-width: $medium) {
     padding-top: 0;
-    }
+  }
 }
 
 .copyright__link {
@@ -15,8 +14,8 @@
   justify-content: space-between;
 
   @media (min-width: $medium) {
-      justify-content: end;
-    }
+    justify-content: end;
+  }
 }
 
 .copyright__link-text {
@@ -24,4 +23,3 @@
     margin-right: 22px;
   }
 }
-
