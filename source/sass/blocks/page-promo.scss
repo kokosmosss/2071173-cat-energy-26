@@ -20,7 +20,7 @@
       linear-gradient(to right, $white -1px, hsl(97 53% 47% / 85%) -1px),
       url("../img/background-cat-big.png");
     background-repeat: no-repeat;
-    width: 720px;
+    width: 50%;
     z-index: -2;
     top: -10px;
     left: 50%;
@@ -89,17 +89,7 @@
     margin: 0 0 41px 0;
   }
 }
-// у меня для эмой кнопки еще модификатор есть. я туда ничего не вписала. по моему туда только падинг можно вынести. или вообще тут он и не нужен?
-.page-promo__button {
-  margin: 0 auto;
-  width: 280px;
-  padding: 10px 44px;
 
-  @media (min-width: $medium) {
-    width: 244px;
-    padding: 17px 20px;
-    font-size: 20px;
-    line-height: 20px;
-    margin: 0;
-  }
+.page-promo__button {
+  width: 280px;
 }

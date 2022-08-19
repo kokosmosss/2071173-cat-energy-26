@@ -3,11 +3,13 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  padding: 50px 0 36px;
+  padding: 25px 0 36px;
   margin: 0;
 
   @media (min-width: $medium) {
-    padding: 68px 0 80px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 68px 36px 80px;
   }
 
   @media (min-width: $large) {
@@ -16,10 +18,15 @@
 }
 
 .catalog-adds__present-block {
-  background-image: url("../img/present-block.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: $green-300;
+  margin-bottom: 35px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $large) {
+    margin: 0;
+  }
 }
 
 .catalog-adds__container {

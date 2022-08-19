@@ -1,5 +1,5 @@
 .catalog__title {
-  padding: 0 0 40px;
+  padding: 8px 0 40px;
   margin: 0;
 
   @media (min-width: $medium) {
@@ -24,4 +24,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 80px 63px;
   }
+}
+
+
+.catalog__item {
+  @media (min-width: $medium) {
+      background-image: linear-gradient(to top, $grey-100 430px, $white 430px);
+    }
 }

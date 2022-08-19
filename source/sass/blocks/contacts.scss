@@ -18,9 +18,14 @@
     width: 565px;
     position: absolute;
     background-color: $white;
-    left: 110px;
+    left: 50%;
     top: 95px;
+    transform: translateX(calc(-1220px / 2));
   }
+}
+
+.contacts__text--grey {
+  background-color: $grey-100;
 }
 
 .contacts__intro {
@@ -30,6 +35,7 @@
   color: $grey-800;
   text-transform: uppercase;
   margin: 0;
+  padding-right: 20px;
 
   @media (min-width: $medium) {
     font-size: 20px;

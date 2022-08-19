@@ -102,11 +102,10 @@
 }
 
 .feachures__item::after {
-  display: none;
-  content: counter(feachures__counter);
   font-family: $oswald;
 
   @media (min-width: $medium) {
+    content: counter(feachures__counter);
     position: absolute;
     display: block;
     width: 112px;
