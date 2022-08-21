@@ -71,12 +71,11 @@
 .pack__button::after {
   content: "";
   margin-left: 15px;
-  width: 32px;
-  height: 10px;
+  width: 24px;
+  height: 12px;
   background-image: url("../img/icons/arrow.svg");
+  background-size: 24px 12px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right center;
 
   @media (min-width: $medium) {
     margin-left: 25px;
@@ -85,4 +84,14 @@
   @media (min-width: $large) {
     margin-left: 28px;
   }
+}
+
+// почему то не работает изменение стрелки? картинку заменила на побольше
+.pack__button:hover .pack__button::after {
+  width: 32px;
+  background-size: 32px 12px;
+}
+
+.pack__button:active {
+  opacity: 0.3;
 }

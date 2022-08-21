@@ -91,5 +91,7 @@
 }
 
 .page-promo__button {
-  width: 280px;
+  @media (max-width: ($medium - 1px)) {
+    margin: 0 auto;
+  }
 }

@@ -21,14 +21,46 @@
   text-align: center;
 
   @media (min-width: $medium) {
-    padding: 12px;
+    padding: 12px 0;
     font-weight: 400;
+    margin: 0 12px;
   }
 
   @media (min-width: $large) {
-    color: $white;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 1px;
   }
+}
+
+.nav-list__link--current {
+  @media (min-width: $medium) {
+    border-bottom: 2px solid $green-300;
+  }
+}
+
+.nav-list__link:active {
+  @media (min-width: $medium) {
+    border-bottom: 2px solid $green-300;
+  }
+}
+
+.page-header__nav--index .nav-list__link:active {
+  border-color: $white;
+}
+
+.page-header__nav--index .nav-list__link {
+  @media (min-width: $large) {
+    color: $white;
+  }
+}
+
+.page-header__nav--index .nav-list__link--current {
+  @media (min-width: $large) {
+    border-color: $white;
+  }
+}
+
+.nav-list__link:not(.nav-list__link--current):hover {
+  opacity: 0.6;
 }

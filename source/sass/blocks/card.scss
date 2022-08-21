@@ -1,12 +1,11 @@
 .card {
-  padding: 19px 0 25px;
+  padding: 19px 20px 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $medium) {
     display: block;
     padding: 36px 37px 39px 39px;
-    // min-height: 511px; // временно
   }
 }
 
@@ -27,9 +26,9 @@
     line-height: 24px;
   }
 
-    @media (min-width: $large) {
-      line-height: 21px;
-    }
+  @media (min-width: $large) {
+    line-height: 21px;
+  }
 }
 
 .card__specs {
@@ -48,16 +47,16 @@
     padding: 0;
     font-size: 16px;
   }
-
 }
 
 .card__specs-term {
   flex: 0 0 50%;
   text-overflow: ellipsis;
-    @media (min-width: $medium) {
-        padding: 7px 0 7px;
-        border-bottom: 1px solid $grey-400;
-      }
+
+  @media (min-width: $medium) {
+    padding: 7px 0 7px;
+    border-bottom: 1px solid $grey-400;
+  }
 }
 
 .card__specs-description {
@@ -66,9 +65,9 @@
   text-align: right;
 
   @media (min-width: $medium) {
-      padding: 7px 0 7px;
-      border-bottom: 1px solid $grey-400;
-    }
+    padding: 7px 0 7px;
+    border-bottom: 1px solid $grey-400;
+  }
 }
 
 .card__button {

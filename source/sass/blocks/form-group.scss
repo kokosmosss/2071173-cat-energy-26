@@ -7,7 +7,6 @@
   @media (min-width: $medium) {
     font-size: 36px;
     line-height: 36px;
-    padding: 71px 0 76px;
     padding: 17px 0 0;
     margin-bottom: 72px;
   }
@@ -25,8 +24,8 @@
   padding-bottom: 4px;
 
   @media (min-width: $medium) {
-      padding-bottom: 0;
-    }
+    padding-bottom: 0;
+  }
 
   @media (min-width: $large) {
     display: grid;

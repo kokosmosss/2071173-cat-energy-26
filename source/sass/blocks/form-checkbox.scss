@@ -5,10 +5,10 @@
   padding: 0;
 
   @media (min-width: $medium) {
-      font-size: 36px;
-      line-height: 36px;
-      margin-bottom: 59px;
-    }
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 59px;
+  }
 }
 
 .form-checkbox {
@@ -30,7 +30,7 @@
 
   @media (min-width: $medium) {
     margin: 0 0 33px;
-    }
+  }
 }
 
 .form-checkbox__area:last-child {

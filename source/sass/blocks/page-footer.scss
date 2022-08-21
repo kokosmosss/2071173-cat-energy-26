@@ -1,5 +1,5 @@
 .page-footer {
-  @media (max-width: 767px) {
+  @media (max-width: ($medium - 1px)) {
     padding: 39px 20px 22px;
   }
 
@@ -36,7 +36,7 @@
 .page-footer__logo {
   flex-basis: 30%;
 
-  @media (max-width: 767px) {
+  @media (max-width: ($medium - 1px)) {
     padding-bottom: 32px;
     border-bottom: 1px solid $grey-330;
   }

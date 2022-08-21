@@ -3,17 +3,53 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  padding: 25px 0 36px;
-  margin: 0;
+  padding: 25px 20px 36px;
+  margin: 0 -20px;
+  position: relative;
+  overflow: hidden;
 
   @media (min-width: $medium) {
     font-size: 36px;
     line-height: 36px;
-    padding: 68px 36px 80px;
+    padding: 68px 66px 80px;
+    margin: 0 -36px;
   }
 
   @media (min-width: $large) {
     padding: 76px 0 81px;
+  }
+}
+
+.catalog-adds__title::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: $green-300;
+  top: 50%;
+  left: 280px;
+  overflow: hidden;
+
+  @media (min-width: $medium) {
+    left: 430px;
+  }
+
+  // тут все плохо. у меня не получается сделать.
+  // @media (min-width: $large) {
+  //   left: 0;
+  //   right: 0;
+  // }
+}
+
+.catalog-adds__title::after {
+  @media (min-width: $medium) {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $green-300;
+    top: 50%;
+    left: 0;
+    width: 36px;
   }
 }
 

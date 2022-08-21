@@ -40,6 +40,7 @@
 }
 
 .param-list__term {
+  font-family: $arial;
   font-size: 12px;
   line-height: 12px;
   color: $grey-600;
@@ -49,6 +50,8 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  background-color: $grey-350;
+  padding: 0 5%;
 
   @media (min-width: $medium) {
     font-size: 14px;
