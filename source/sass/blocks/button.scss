@@ -44,3 +44,12 @@
     line-height: 20px;
   }
 }
+
+.button--order {
+  padding: 7px 20px;
+
+    @media (min-width: $medium) {
+       font-size: 20px;
+       min-height: 52px;
+      }
+}

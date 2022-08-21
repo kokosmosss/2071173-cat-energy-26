@@ -1,4 +1,38 @@
 .form-checkbox__title {
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 34px;
+  padding: 0;
+
+  @media (min-width: $medium) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 59px;
+    }
+}
+
+.form-checkbox {
+  @media (min-width: $medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form-checkbox__area {
+  margin: 0 0 13px;
+
+  @media (min-width: $medium) {
+    margin: 0 0 33px;
+    }
+}
+
+.form-checkbox__area:last-child {
+  margin: 0 0 34px;
 }
