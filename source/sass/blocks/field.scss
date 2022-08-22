@@ -59,6 +59,7 @@
 
 .field--textarea {
   grid-template-columns: 1fr;
+  overflow: hidden;
 
   @media (min-width: $medium) {
     margin-bottom: 68px;

@@ -87,3 +87,17 @@
     top: 11px;
   }
 }
+
+.control__input:hover + .control__label::before {
+  border-color: $grey-400;
+}
+
+.control__input:focus + .control__label::before {
+  border-color: $green-300;
+}
+
+.control__input:disabled + .control__label::before,
+.control__input:disabled + .control__label {
+  opacity: 0.3;
+  border-color: $grey-450;
+}
