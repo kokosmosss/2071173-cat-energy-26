@@ -7,6 +7,12 @@
   background-size: contain;
   background-position: top center;
 
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(to top, $white 176px, hsl(97 53% 47% / 85%) 176px),
+      url("../img/background-cat@2x.png");
+  }
+
   @media (min-width: $medium) {
     background: none;
   }
@@ -26,6 +32,13 @@
     left: 50%;
     bottom: 0;
     height: 678px;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to right, $white -1px, hsl(97 53% 47% / 85%) -1px),
+        url("../img/background-cat-big@2x.png");
+      background-size: cover;
+    }
   }
 }
 
@@ -35,11 +48,20 @@
   background-size: 280px 270px;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-small@2x.png");
+  }
+
   @media (min-width: $medium) {
     padding: 68px 90px 526px 116px;
     background-image: url("../img/promo-large.png");
     background-size: 709px 609px;
     background-position: center bottom;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-large@2x.png");
+    }
   }
 
   @media (min-width: $large) {
@@ -48,6 +70,10 @@
     background-image: url("../img/promo-medium.png");
     background-position: top 40px left 559px;
     background-size: 552px 499px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-medium@2x.png");
+    }
   }
 }
 
