@@ -1,3 +1,7 @@
+.packs {
+  margin-bottom: 20px;
+}
+
 .packs__item {
   background-color: $grey-100;
   position: relative;
@@ -5,45 +9,78 @@
   &::before {
     content: "";
     position: absolute;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color: $green-300;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 26px;
+    left: 23px;
+
+    @media (min-width: $medium) {
+      width: 200px;
+      height: 200px;
+      right: 63px;
+      top: 91px;
+      left: auto;
+    }
+
+    @media (min-width: $large) {
+      width: 100px;
+      height: 100px;
+      right: auto;
+      top: 39px;
+      left: auto;
+    }
   }
 }
 
-.packs__item--slim::before {
-  width: 50px;
-  height: 53px;
+.packs__item--slim::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../img/cat-slim.svg");
+  background-size: 100%;
+  width: 36px;
+  height: 50px;
+  top: 24px;
+  left: 28px;
 
-  background-image: url("../img/cat-back-sit.svg");
 
   @media (min-width: $medium) {
-    width: 200px;
-    height: 214px;
-    right: 62px;
-    top: 78px;
+    width: 140px;
+    height: 194px;
+    right: 92px;
+    top: 80px;
+    left: auto;
   }
 
   @media (min-width: $large) {
-    width: 100px;
-    height: 115px;
+    width: 70px;
+    height: 97px;
     right: auto;
-    top: 36px;
+    left: 67px;
+    top: 34px;
   }
 }
 
-.packs__item--pro::before {
+.packs__item--pro::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/cat-pro.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   width: 67px;
   height: 50px;
-  left: 9px;
-  top: 25px;
-  background-image: url("../img/cat-back-walk.svg");
+  left: 12px;
+  top: 36px;
 
 
   @media (min-width: $medium) {
     width: 268px;
     height: 200px;
     left: auto;
-    top: 94px;
+    top: 136px;
     right: 29px;
   }
 
@@ -51,11 +88,10 @@
     width: 134px;
     height: 100px;
     right: auto;
-    top: 40px;
+    top: 59px;
     left: 32px;
   }
 }
-
 
 .packs__list {
   display: grid;

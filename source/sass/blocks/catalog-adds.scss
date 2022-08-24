@@ -1,55 +1,48 @@
-.catalog-adds__title {
-  font-family: $oswald;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  padding: 25px 20px 36px;
-  margin: 0 -20px;
+.catalog-adds {
   position: relative;
-  overflow: hidden;
-
-  @media (min-width: $medium) {
-    font-size: 36px;
-    line-height: 36px;
-    padding: 68px 66px 80px;
-    margin: 0 -36px;
-  }
-
-  @media (min-width: $large) {
-    padding: 76px 0 81px;
-  }
 }
 
-.catalog-adds__title::before {
+.catalog-adds::before {
   content: "";
   position: absolute;
   height: 2px;
   width: 100%;
   background-color: $green-300;
-  top: 50%;
-  left: 280px;
-  overflow: hidden;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: -1;
 
   @media (min-width: $medium) {
-    left: 430px;
+    top: 90px;
   }
 
-  // тут все плохо. у меня не получается сделать.
-  // @media (min-width: $large) {
-  //   left: 0;
-  //   right: 0;
-  // }
+    @media (min-width: $large) {
+      top: 100px;
+    }
 }
 
-.catalog-adds__title::after {
+.catalog-adds__title {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 25px 22px 36px;
+  margin: 0 -22px;
+  display: inline-block;
+  background-color: $white;
+  z-index: 0;
+
   @media (min-width: $medium) {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: $green-300;
-    top: 50%;
-    left: 0;
-    width: 36px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 68px 36px 80px 36px;
+    margin: 0 -36px 0 36px;
+  }
+
+  @media (min-width: $large) {
+    padding: 76px 35px 81px 40px;
+    margin: 0 -35px 0 -40px;
   }
 }
 

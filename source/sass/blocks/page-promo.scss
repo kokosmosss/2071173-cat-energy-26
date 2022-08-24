@@ -26,6 +26,13 @@
     left: 50%;
     bottom: 0;
     height: 678px;
+    background-color: $grey-650;
+  }
+}
+
+.page-promo::after {
+  @media (min-width: 2000px) {
+    background-size: 100%;
   }
 }
 
@@ -91,6 +98,8 @@
 }
 
 .page-promo__button {
+  width: 280px;
+  
   @media (max-width: ($medium - 1px)) {
     margin: 0 auto;
   }

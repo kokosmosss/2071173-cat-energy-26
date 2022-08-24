@@ -1,6 +1,6 @@
 .field {
   display: grid;
-  grid-template-columns: auto 1fr; // вот тут я долго думала как сделать чтобы "возраст (лет)" не переносилось. и инпуту задавала максимальную ширину 100%, и разные размеры колонок пробовала, ничего не помогло - всегда появляется полоса прокрутки
+  grid-template-columns: max-content 1fr;
   align-items: center;
 }
 
@@ -38,15 +38,7 @@
   border: 1px solid $grey-340;
   display: block;
   font-family: $oswald;
-  resize: none;
-
-  @media (min-width: $medium) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.field__input::placeholder {
+  min-width: 0;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
@@ -59,7 +51,6 @@
 
 .field--textarea {
   grid-template-columns: 1fr;
-  overflow: hidden;
 
   @media (min-width: $medium) {
     margin-bottom: 68px;

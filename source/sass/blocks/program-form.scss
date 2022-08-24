@@ -35,17 +35,19 @@
   }
 }
 
-// .program-form__group--line::before {
-//   content: "";
-//   position: absolute;
-//   height: 2px;
-//   width: 100%;
-//   background-color: $green-300;
-//   top: 1052px;
-//   left: 0;
-//   right: 0;
-//   overflow: hidden;
-// }
+.program-form__group--line {
+  position: relative;
+}
+
+.program-form__group--line::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: $green-300;
+  width: 100vw;
+  top: 0;
+  left: calc(50% - 50vw);
+}
 
 .program-form__button {
   width: 100%;
