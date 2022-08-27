@@ -1,5 +1,9 @@
 .form-radio {
-  padding: 22px 20px 20px;
+  padding: 22px 20px 17px;
+
+  @media (min-width: $medium) {
+    padding: 23px 27px;
+  }
 }
 
 .form-radio--decor {
@@ -10,7 +14,6 @@
 
   @media (min-width: $medium) {
     border: 1px solid $grey-370;
-    padding: 25px 27px;
     margin-right: 0;
     margin-left: 0;
   }
