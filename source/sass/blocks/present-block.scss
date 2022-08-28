@@ -20,6 +20,10 @@
     padding: 186px 43px 42px;
     background-position: top 58px center, center;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/icons/present.svg"), url("../img/present-block@2x.png");
+  }
 }
 
 .present-block__description {

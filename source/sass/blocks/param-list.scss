@@ -58,5 +58,10 @@
     line-height: 14px;
     bottom: -5px;
     white-space: nowrap;
+    background-color: $white;
+  }
+
+  @media (min-width: $large) {
+    background-color: $grey-350;
   }
 }

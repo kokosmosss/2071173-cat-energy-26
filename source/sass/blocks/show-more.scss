@@ -10,6 +10,11 @@
     background-size: 60px 60px;
     background-position: center top 44px;
   }
+
+    @media (min-width: $medium) {
+      padding: 52px 43px 38px;
+      background-position: center top 61px;
+    }
 }
 
 .show-more__title {

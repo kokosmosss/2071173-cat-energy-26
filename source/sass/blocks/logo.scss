@@ -25,9 +25,12 @@
 }
 
 .logo__image {
+  display: block;
+  
   @media (min-width: $medium) {
     width: 61px;
     height: 52px;
+    margin-right: 20px;
   }
 
     @media (min-width: $large) {
