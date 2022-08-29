@@ -49,6 +49,8 @@ body.addEventListener('mousemove', (e) => {
   pauseEvents(e);
 });
 
+// touch
+
 // body.addEventListener('touchstart', () => {
 //   isActive = true;
 // });

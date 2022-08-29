@@ -18,6 +18,14 @@
   }
 }
 
+.copyright__link:hover {
+  color: $green-300;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
 .copyright__link-text {
   @media (min-width: $medium) {
     margin-right: 22px;

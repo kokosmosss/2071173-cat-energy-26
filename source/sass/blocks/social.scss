@@ -12,4 +12,13 @@
 
 .social__link {
   padding: 23px 13px;
+  color: $grey-500;
+}
+
+.social__link:hover {
+  color: $green-300;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }
