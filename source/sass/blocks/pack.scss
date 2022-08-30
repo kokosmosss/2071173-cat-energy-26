@@ -74,7 +74,6 @@
   width: 32px;
   height: 12px;
   background-image: url("../img/icons/arrow.svg");
-  // background-size: 32px 12px;
   background-repeat: no-repeat;
   background-position: -8px 50%;
 
@@ -86,7 +85,6 @@
     margin-left: 28px;
   }
 }
-
 
 .pack__button:hover::after {
   background-position: 100%;

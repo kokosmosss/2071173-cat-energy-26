@@ -21,7 +21,6 @@
   box-sizing: border-box;
 }
 
-// я пока не сделала медиазапрос, у меня в каталоге почему то еще до планшета он начинал работать... не знаешь почему?)
 .center-container {
   @media (min-width: $large) {
     max-width: 1440px;

@@ -10,11 +10,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 59px;
-    grid-column: span 2;
-  }
-
-  @media (min-width: $large) {
-    grid-column: span 4;
+    grid-column: 1 / -1;
   }
 }
 

@@ -14,10 +14,10 @@
   justify-self: center;
 }
 
-.logo[href]:hover {
+.logo:link:hover {
   opacity: 0.8;
 }
 
-.logo[href]:active {
+.logo:link:active {
   opacity: 0.6;
 }
