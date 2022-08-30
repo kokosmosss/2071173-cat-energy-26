@@ -1,3 +1,7 @@
+.page-main {
+  overflow: hidden;
+}
+
 .page-main__title {
   font-family: $oswald;
   font-size: 36px;
@@ -11,7 +15,7 @@
 }
 
 .page-main__section {
-  padding: 20px 20px 0;
+  padding: 0 20px;
 
   @media (min-width: $medium) {
     padding: 0 30px;
@@ -20,6 +24,10 @@
   @media (min-width: $large) {
     padding: 0 110px;
   }
+}
+
+.page-main__promo {
+  margin-bottom: 20px;
 }
 
 .page-main__form {

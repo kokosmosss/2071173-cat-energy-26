@@ -39,9 +39,15 @@
   }
 }
 
-.nav-list__link:active {
+.nav-list__link:not(.nav-list__link--current):hover {
   @media (min-width: $medium) {
-    border-bottom: 2px solid $green-300;
+    opacity: 0.6;
+  }
+}
+
+.nav-list__link:not(.nav-list__link--current):active {
+  @media (min-width: $medium) {
+    color: $grey-470;
   }
 }
 
@@ -59,8 +65,4 @@
   @media (min-width: $large) {
     border-color: $white;
   }
-}
-
-.nav-list__link:not(.nav-list__link--current):hover {
-  opacity: 0.6;
 }

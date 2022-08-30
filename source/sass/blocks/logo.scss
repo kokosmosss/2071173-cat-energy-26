@@ -38,3 +38,11 @@
     height: 60px;
   }
 }
+
+.logo:link:hover {
+  opacity: 0.8;
+}
+
+.logo:link:active {
+  opacity: 0.6;
+}

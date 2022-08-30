@@ -18,9 +18,8 @@
     width: 565px;
     position: absolute;
     background-color: $white;
-    left: 50%;
+    left: calc(50% - 610px);
     top: 95px;
-    transform: translateX(calc(-1220px / 2));
   }
 }
 
@@ -54,6 +53,7 @@
 
   @media (min-width: $medium) {
     font-size: 16px;
+    text-align: end;
   }
 }
 

@@ -95,6 +95,7 @@
   }
 }
 
+// без js = кнопки нет, меню открыто в потоке
 .page-header--no-js .page-header__nav {
   position: static;
 }
@@ -103,14 +104,17 @@
   display: none;
 }
 
+// js должен убирать page-header--closed и добавлять к кнопке page-header__toggle--close = меню открыто + кнопка-крестик показана
+// при закрытом меню кнопка-крестик скрыта
 .page-header--closed .page-header__toggle--close {
   display: none;
 }
 
-.page-header--closed .page-header__toggle::before {
+// при закрытом меню кнопка-бургер показана.
+.page-header--closed .page-header__toggle {
   display: block;
 }
 
 .page-header--closed .page-header__nav {
-  visibility: hidden;
+  display: none;
 }

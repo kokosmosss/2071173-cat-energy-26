@@ -32,13 +32,18 @@
     left: 50%;
     bottom: 0;
     height: 678px;
+    background-color: $grey-650;
+  }
 
-    @media (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient(to right, $white -1px, hsl(97 53% 47% / 85%) -1px),
-        url("../img/background-cat-big@2x.png");
-      background-size: cover;
-    }
+  @media (min-width: 2000px) {
+    background-size: 100%;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(to right, $white -1px, hsl(97 53% 47% / 85%) -1px),
+      url("../img/background-cat-big@2x.png");
+    background-size: cover;
   }
 }
 
@@ -117,6 +122,8 @@
 }
 
 .page-promo__button {
+  width: 280px;
+
   @media (max-width: ($medium - 1px)) {
     margin: 0 auto;
   }
