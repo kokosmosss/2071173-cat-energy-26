@@ -24,6 +24,12 @@
   }
 }
 
+.page-footer__logo .logo__text {
+  @media (min-width: $medium) {
+    width: 127px;
+  }
+}
+
 .logo__image {
   display: block;
 

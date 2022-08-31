@@ -30,6 +30,7 @@
 
 .card__image {
   display: block;
+  margin-bottom: 10px;
 }
 
 .catalog__item:nth-child(2n+1) .card__image {
@@ -67,6 +68,7 @@
   font-weight: 400;
   grid-column: 2 / -1;
   margin: 0;
+  padding-right: 50px;
 
   @media (min-width: $medium) {
     text-align: center;
@@ -80,6 +82,7 @@
   @media (min-width: $large) {
     line-height: 21px;
     padding: 0 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -89,7 +92,7 @@
   color: $grey-600;
   grid-column: 2 / -1;
   margin: 0;
-  padding: 18px 0 22px;
+  padding: 15px 0 21px;
   display: flex;
   flex-wrap: wrap;
 
