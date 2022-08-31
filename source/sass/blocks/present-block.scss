@@ -1,15 +1,24 @@
 .present-block {
   padding: 186px 61px 43px 58px;
   text-align: center;
+  background-image: url("../img/icons/present.svg"), url("../img/present-block.png");
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-color: $green-300;
+  background-position: top 58px center, center;
 
   @media (min-width: $medium) {
     padding: 71px 124px 69px 422px;
     text-align: start;
+    background-size: 70px 82px, cover;
+    background-position: left 72px center, center bottom -235px;
   }
 
   @media (min-width: $large) {
-    padding: 0;
     text-align: center;
+    background-size: auto, cover;
+    padding: 186px 43px 42px;
+    background-position: top 58px center, center;
   }
 }
 

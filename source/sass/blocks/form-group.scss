@@ -1,4 +1,38 @@
 .form-group__title {
   font-size: 24px;
   line-height: 26px;
+  margin: 0;
+  padding: 17px 0 35px;
+  float: left;
+
+  @media (min-width: $medium) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 17px 0 0;
+    margin-bottom: 72px;
+    grid-column: span 2;
+  }
+}
+
+.form-group__area {
+  margin: 0 0 16px;
+
+  @media (min-width: $medium) {
+    margin: 0 0 19px;
+  }
+}
+
+.form-group--small {
+  padding-bottom: 4px;
+
+  @media (min-width: $medium) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    margin-bottom: 47px;
+  }
 }

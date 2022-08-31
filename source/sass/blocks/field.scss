@@ -1,5 +1,75 @@
+.field {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+}
+
+.field__title {
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0 0 34px;
+
+  @media (min-width: $medium) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 66px;
+  }
+
+  @media (min-width: $large) {
+    margin: 0 0 77px;
+  }
+}
+
 .field__label {
   font-size: 16px;
   text-transform: uppercase;
   color: $grey-600;
+  margin-right: 12px;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 20px;
+  }
+}
+
+.field__input {
+  padding: 11px 13px;
+  border: 1px solid $grey-340;
+  display: block;
+  font-family: $oswald;
+  min-width: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.field__input:hover {
+  border-color: $grey-400;
+}
+
+.field__input:focus {
+  border-color: $grey-600;
+  outline: none;
+}
+
+.field--textarea {
+  grid-template-columns: 1fr;
+
+  @media (min-width: $medium) {
+    margin-bottom: 68px;
+  }
+}
+
+.field--textarea .field__input {
+  min-height: 150px;
+
+  @media (min-width: $medium) {
+    min-height: 174px;
+  }
 }

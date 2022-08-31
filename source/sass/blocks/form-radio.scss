@@ -1,1 +1,28 @@
-// стили для .radio
+.form-radio {
+  padding: 22px 20px 17px;
+
+  @media (min-width: $medium) {
+    padding: 23px 27px;
+  }
+}
+
+.form-radio--decor {
+  margin-right: -20px;
+  margin-left: -20px;
+  border-top: 1px solid $grey-370;
+  border-bottom: 1px solid $grey-370;
+
+  @media (min-width: $medium) {
+    border: 1px solid $grey-370;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.form-radio__area {
+  margin: 0 0 13px;
+}
+
+.form-radio__area:last-child {
+  margin: 0;
+}

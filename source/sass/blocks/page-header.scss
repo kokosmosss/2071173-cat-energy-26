@@ -5,16 +5,115 @@
   width: 100%;
 
   @media (min-width: $medium) {
+    font-size: 18px;
+    line-height: 24px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
-.page-header__menu-container {
+.page-header__logo {
+  grid-template-columns: 1fr 1fr;
+  grid-column: span 2;
+}
+
+.page-header__menu {
   padding: 10px 20px 17px;
+  min-width: 280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
   @media (min-width: $medium) {
     padding: 0;
+    max-width: 174px;
+    grid-template-columns: 1fr;
+    min-width: auto;
   }
+}
+
+.page-header__toggle {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 4px 4px;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  justify-self: end;
+  align-self: end;
+  position: relative;
+
+  @media (min-width: $medium) {
+    display: none;
+  }
+}
+
+.page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+.page-header__toggle--close {
+  top: 0;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: ($medium - 1px)) {
+  .page-header__nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+  }
+}
+
+// без js = кнопки нет, меню открыто в потоке
+.page-header--no-js .page-header__nav {
+  position: static;
+}
+
+.page-header--no-js .page-header__toggle {
+  display: none;
+}
+
+// js должен убирать page-header--closed и добавлять к кнопке page-header__toggle--close = меню открыто + кнопка-крестик показана
+// при закрытом меню кнопка-крестик скрыта
+.page-header--closed .page-header__toggle--close {
+  display: none;
+}
+
+// при закрытом меню кнопка-бургер показана.
+.page-header--closed .page-header__toggle {
+  display: block;
+}
+
+.page-header--closed .page-header__nav {
+  display: none;
 }

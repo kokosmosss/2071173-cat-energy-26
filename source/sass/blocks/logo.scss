@@ -1,0 +1,23 @@
+.logo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  @media (min-width: $medium) {
+    min-width: 174px;
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.logo__text {
+  justify-self: center;
+}
+
+.logo:link:hover {
+  opacity: 0.8;
+}
+
+.logo:link:active {
+  opacity: 0.6;
+}

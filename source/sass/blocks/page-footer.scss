@@ -1,6 +1,9 @@
 .page-footer {
+  @media (max-width: ($medium - 1px)) {
+    padding: 39px 20px 22px;
+  }
+
   background-color: $grey-100;
-  padding: 39px 20px 25px;
   text-align: center;
   width: 100%;
 }
@@ -11,11 +14,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 58px 30px 55px;
+    padding: 52px 30px 55px;
   }
 
   @media (min-width: $large) {
-    padding: 63px 110px 62px;
+    padding: 77px 110px 62px;
   }
 }
 
@@ -31,4 +34,9 @@
 
 .page-footer__logo {
   flex-basis: 30%;
+
+  @media (max-width: ($medium - 1px)) {
+    padding-bottom: 32px;
+    border-bottom: 1px solid $grey-330;
+  }
 }

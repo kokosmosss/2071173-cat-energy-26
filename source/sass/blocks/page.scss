@@ -15,12 +15,17 @@
 
 .page__header {
   font-family: $oswald;
+  position: relative;
 
   @media (min-width: $medium) {
-    padding: 30px 24px 0;
+    padding: 24px 24px 0;
   }
 
   @media (min-width: $large) {
     padding: 53px 110px 0;
   }
+}
+
+.page__contacts {
+  margin-top: auto;
 }

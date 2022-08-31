@@ -1,5 +1,5 @@
 .catalog__title {
-  padding: 0 0 40px;
+  padding: 27px 0 40px;
   margin: 0;
 
   @media (min-width: $medium) {
@@ -13,15 +13,33 @@
 
 .catalog__list {
   display: grid;
-  gap: 19px;
+  margin: 0 -20px 0;
 
   @media (min-width: $medium) {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    margin: auto;
   }
 
   @media (min-width: $large) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 80px 63px;
+  }
+}
+
+
+.catalog__item {
+  @media (min-width: $medium) {
+    background-image: linear-gradient(to top, $grey-100 430px, $white 430px);
+  }
+}
+
+@media (max-width: ($medium - 1px)) {
+  .catalog__item:last-child {
+    border-bottom: 1px solid $grey-200;
+  }
+
+  .catalog__item {
+    border-top: 1px solid $grey-200;
   }
 }

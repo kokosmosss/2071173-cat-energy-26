@@ -1,5 +1,5 @@
 .page-main {
-  position: relative;
+  overflow: hidden;
 }
 
 .page-main__title {
@@ -14,9 +14,8 @@
   }
 }
 
-
 .page-main__section {
-  padding: 20px 20px 0;
+  padding: 0 20px;
 
   @media (min-width: $medium) {
     padding: 0 30px;
@@ -27,6 +26,10 @@
   }
 }
 
+.page-main__promo {
+  margin-bottom: 20px;
+}
+
 .page-main__form {
   font-family: $oswald;
   padding: 27px 20px 0;
@@ -35,6 +38,8 @@
   @media (min-width: $medium) {
     padding: 65px 70px 0;
     margin-bottom: 72px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $large) {
@@ -52,7 +57,7 @@
   @media (min-width: $medium) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 54px;
+    margin: 0 0 60px;
   }
 
   @media (min-width: $large) {
@@ -64,9 +69,13 @@
 
 .page-main__form-intro {
   text-transform: uppercase;
-  margin: 0 0 38px;
+  margin: 0 0 34px;
 
   @media (min-width: $medium) {
-    margin: 0 0 66px;
+    margin: 0 0 60px;
+  }
+
+  @media (min-width: $large) {
+    margin: 0 0 67px;
   }
 }

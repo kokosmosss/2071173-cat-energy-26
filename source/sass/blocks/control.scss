@@ -1,0 +1,104 @@
+.control {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 15px;
+  align-items: center;
+
+  @media (min-width: $medium) {
+    grid-template-columns: 40px 1fr;
+    gap: 20px;
+  }
+}
+
+.control__label {
+  text-transform: uppercase;
+  font-size: 16px;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.control__input {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  opacity: 0;
+  z-index: 2;
+
+  @media (min-width: $medium) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.control__label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid $grey-400;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media (min-width: $medium) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-radio__area .control__label::before {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__label::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $green-300;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+
+  @media (min-width: $medium) {
+    width: 18px;
+    height: 18px;
+    left: 11px;
+    top: 11px;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control__label::after {
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icons/tick.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 6px;
+  top: 8px;
+
+  @media (min-width: $medium) {
+    width: 18px;
+    height: 18px;
+    left: 11px;
+    top: 11px;
+  }
+}
+
+.control__input:hover + .control__label::before {
+  border-color: $grey-400;
+}
+
+.control__input:focus + .control__label::before {
+  border-color: $green-300;
+}
+
+.control__input:disabled + .control__label::before,
+.control__input:disabled + .control__label {
+  opacity: 0.3;
+  border-color: $grey-450;
+}
