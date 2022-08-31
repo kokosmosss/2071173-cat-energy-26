@@ -53,7 +53,7 @@
 
 .nav-list__link:not(.nav-list__link--current):active {
   @media (min-width: $medium) {
-    color: $grey-470;
+    opacity: 0.3;
   }
 }
 
