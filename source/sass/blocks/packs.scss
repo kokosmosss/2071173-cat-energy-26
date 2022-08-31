@@ -34,12 +34,14 @@
     }
   }
 }
+
 .packs__item::after {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
 .packs__item--slim::after {
   background-image: url("../img/cat-slim.svg");
   width: 36px;
