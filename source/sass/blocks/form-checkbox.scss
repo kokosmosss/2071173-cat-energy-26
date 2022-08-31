@@ -35,6 +35,8 @@
   }
 }
 
-.form-checkbox__area:last-child {
-  margin: 0 0 23px;
+@media (max-width: ($medium - 1px)) {
+  .form-checkbox__area:last-child {
+    margin: 0 0 23px;
+  }
 }

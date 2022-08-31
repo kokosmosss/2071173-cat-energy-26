@@ -13,6 +13,12 @@
   }
 }
 
+.page-header--closed {
+  @media (max-width: ($medium - 1px)) {
+    border-bottom: 1px solid $grey-370;
+  }
+}
+
 .page-header__logo {
   grid-template-columns: 1fr max-content;
   grid-column: span 2;

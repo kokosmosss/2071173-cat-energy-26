@@ -50,12 +50,17 @@
   }
 }
 
+.field__input--icon {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+}
+
 .field__input:hover {
   border-color: $grey-400;
 }
 
-.field__input:focus {
-  border-color: $grey-600;
+.field__input:not(:placeholder-shown) {
+  border: 2px solid $grey-600;
   outline: none;
 }
 
@@ -73,4 +78,16 @@
   @media (min-width: $medium) {
     min-height: 174px;
   }
+}
+
+.field__icon {
+  display: block;
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  justify-self: end;
+  margin: 20px;
+}
+
+.field__input:not(:placeholder-shown) + .field__icon {
+  stroke: $green-300;
 }
