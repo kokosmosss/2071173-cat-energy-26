@@ -27,20 +27,13 @@
   }
 }
 
-
-.catalog__item {
-  @media (min-width: $medium) {
-    background-image: linear-gradient(to top, $grey-100 430px, $white 430px);
-  }
-}
-
 .catalog__item:last-child {
   @media (min-width: $medium) {
     margin-top: 78px;
   }
 
   @media (min-width: $large) {
-    margin-top: 84px;
+    margin-top: 89px;
   }
 }
 

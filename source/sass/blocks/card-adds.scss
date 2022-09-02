@@ -15,14 +15,6 @@
   }
 }
 
-.catalog-adds__item {
-  border-top: 1px solid $grey-400;
-}
-
-.catalog-adds__item:last-child {
-  border-bottom: 1px solid $grey-400;
-}
-
 .card-adds__title {
   font-size: 16px;
   line-height: 16px;
@@ -62,6 +54,7 @@
   }
 
   @media (min-width: $large) {
+    grid-template-columns: 1fr 70px;
     grid-column: span 1;
     margin: 0;
     column-gap: 0;

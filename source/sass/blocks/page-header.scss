@@ -3,6 +3,7 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 100%;
+  border-bottom: 1px solid $white;
 
   @media (min-width: $medium) {
     font-size: 18px;
@@ -10,12 +11,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: none;
   }
 }
 
 .page-header--closed {
   @media (max-width: ($medium - 1px)) {
-    border-bottom: 1px solid $grey-370;
+    border-bottom-color: $grey-370;
   }
 }
 
@@ -97,6 +99,7 @@
     left: 0;
     width: 100%;
     background-color: $white;
+    z-index: 2;
   }
 }
 

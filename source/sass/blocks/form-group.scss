@@ -22,6 +22,12 @@
   }
 }
 
+.program-form__container .form-group__area:last-child {
+  @media (min-width: $medium) {
+    margin: 0;
+  }
+}
+
 .form-group--small {
   padding-bottom: 4px;
 

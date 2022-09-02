@@ -48,34 +48,3 @@ body.addEventListener('mousemove', (e) => {
   beforeAfterSlider(x);
   pauseEvents(e);
 });
-
-// touch
-
-// body.addEventListener('touchstart', () => {
-//   isActive = true;
-// });
-
-// body.addEventListener('touchend', () => {
-//   isActive = false;
-// });
-
-// body.addEventListener('touchcancel', () => {
-//   isActive = false;
-// });
-
-// body.addEventListener('touchmove', (e) => {
-//   if (!isActive) {
-//     return;
-//   }
-
-//   let x;
-//   let i;
-
-//   for (i = 0; e < e.changedTouches; i++) {
-//     x = e.changedTouches[i].pageX;
-//   }
-
-//   x -= slider.getBoundingClientRect().left;
-//   beforeAfterSlider(x);
-//   pauseEvents(e);
-// });

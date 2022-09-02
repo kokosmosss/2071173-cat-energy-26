@@ -6,6 +6,7 @@
   @media (min-width: $medium) {
     display: block;
     padding: 17px 40px 39px;
+    background-image: linear-gradient(to bottom, $white 89px, $grey-100 89px);
   }
 }
 
@@ -41,7 +42,7 @@
   }
 
   @media (min-width: $large) {
-    margin-bottom: 42px;
+    margin-bottom: 53px;
   }
 }
 
