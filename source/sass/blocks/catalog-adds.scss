@@ -3,6 +3,14 @@
   z-index: 0;
 }
 
+.catalog-adds__item {
+  border-top: 1px solid $grey-400;
+}
+
+.catalog-adds__item:last-child {
+  border-bottom: 1px solid $grey-400;
+}
+
 .catalog-adds::before {
   content: "";
   position: absolute;
@@ -15,7 +23,7 @@
   z-index: -1;
 
   @media (min-width: $medium) {
-    top: 90px;
+    top: 80px;
   }
 
   @media (min-width: $large) {
@@ -36,12 +44,12 @@
   @media (min-width: $medium) {
     font-size: 36px;
     line-height: 36px;
-    padding: 68px 36px 80px 36px;
-    margin: 0 -36px 0 36px;
+    padding: 60px 36px 80px 36px;
+    margin: 0;
   }
 
   @media (min-width: $large) {
-    padding: 76px 35px 81px 40px;
+    padding: 68px 35px 81px 40px;
     margin: 0 -35px 0 -40px;
   }
 }

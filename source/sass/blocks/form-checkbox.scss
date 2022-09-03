@@ -8,7 +8,7 @@
   @media (min-width: $medium) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 59px;
+    margin-bottom: 52px;
     grid-column: 1 / -1;
   }
 }
@@ -34,6 +34,8 @@
   }
 }
 
-.form-checkbox__area:last-child {
-  margin: 0 0 23px;
+@media (max-width: ($medium - 1px)) {
+  .form-checkbox__area:last-child {
+    margin: 0 0 23px;
+  }
 }

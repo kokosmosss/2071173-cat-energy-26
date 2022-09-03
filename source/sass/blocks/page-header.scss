@@ -3,6 +3,7 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 100%;
+  border-bottom: 1px solid $white;
 
   @media (min-width: $medium) {
     font-size: 18px;
@@ -10,11 +11,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: none;
+  }
+}
+
+.page-header--closed {
+  @media (max-width: ($medium - 1px)) {
+    border-bottom-color: $grey-370;
   }
 }
 
 .page-header__logo {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr max-content;
   grid-column: span 2;
 }
 
@@ -28,7 +36,7 @@
     padding: 0;
     max-width: 174px;
     grid-template-columns: 1fr;
-    min-width: auto;
+    min-width: max-content;
   }
 }
 
@@ -91,6 +99,7 @@
     left: 0;
     width: 100%;
     background-color: $white;
+    z-index: 2;
   }
 }
 

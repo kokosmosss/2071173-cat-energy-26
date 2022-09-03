@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
+  z-index: 0;
 }
 
 .field__title {
@@ -34,14 +35,18 @@
 }
 
 .field__input {
-  padding: 11px 13px;
-  border: 1px solid $grey-340;
+  padding: 11px 18px;
+  border: none;
+  outline: none;
+  margin: 0;
+  box-shadow: 0 0 0 1px $grey-340;
   display: block;
   font-family: $oswald;
   min-width: 0;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  background-color: transparent;
 
   @media (min-width: $medium) {
     font-size: 20px;
@@ -49,13 +54,27 @@
   }
 }
 
+.field__input--icon {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  padding-right: 40px;
+}
+
 .field__input:hover {
   border-color: $grey-400;
 }
 
 .field__input:focus {
-  border-color: $grey-600;
+  box-shadow: 0 0 0 2px $grey-600;
   outline: none;
+}
+
+.field__input--error {
+  box-shadow: 0 0 0 2px $pink-400;
+}
+
+.field__input--error + .field__icon {
+  color: $pink-400;
 }
 
 .field--textarea {
@@ -73,3 +92,23 @@
     min-height: 174px;
   }
 }
+
+.field__icon {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  justify-self: end;
+  margin: 20px;
+  z-index: -1;
+}
+
+.field__input:focus + .field__icon {
+  color: $green-300;
+}
+
+// .field__input:focus+.field__icon {
+//   stroke: $green-300;
+// }
+
+// .field__input:focus+.field__icon path {
+//   stroke: $green-300;
+// }

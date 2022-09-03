@@ -4,13 +4,21 @@
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 767px) {
-    padding: 20px 0;
+  @media (max-width: ($medium - 1px)) {
     border-bottom: 1px solid $grey-330;
   }
 }
 
 .social__link {
   padding: 23px 13px;
+  color: $grey-500;
   display: block;
+}
+
+.social__link:hover {
+  color: $green-300;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }

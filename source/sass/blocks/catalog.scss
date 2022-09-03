@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $large) {
-    padding: 74px 0 84px;
+    padding: 74px 0 78px;
   }
 }
 
@@ -23,14 +23,17 @@
 
   @media (min-width: $large) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 80px 63px;
+    gap: 47px 63px;
   }
 }
 
-
-.catalog__item {
+.catalog__item:last-child {
   @media (min-width: $medium) {
-    background-image: linear-gradient(to top, $grey-100 430px, $white 430px);
+    margin-top: 78px;
+  }
+
+  @media (min-width: $large) {
+    margin-top: 89px;
   }
 }
 

@@ -1,5 +1,5 @@
 .copyright {
-  padding-top: 28px;
+  padding-top: 16px;
 
   @media (min-width: $medium) {
     padding-top: 0;
@@ -17,6 +17,14 @@
   @media (min-width: $medium) {
     justify-content: end;
   }
+}
+
+.copyright__link:hover {
+  color: $green-300;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }
 
 .copyright__link-text {

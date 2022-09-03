@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $large) {
-    margin-bottom: 39px;
+    margin-bottom: 59px;
   }
 }
 
@@ -74,15 +74,15 @@
 }
 
 .form-group.program-form__group--line::before {
-  top: 42px;
+  top: 31px;
 }
 
 .field.program-form__group--line::before {
-  top: 26px;
+  top: 19px;
 }
 
 .form-checkbox.program-form__group--line::before {
-  top: 27px;
+  top: 18px;
 }
 
 .program-form__button {
@@ -103,7 +103,7 @@
   }
 
   @media (min-width: $large) {
-    margin-top: -11px;
+    margin-top: -34px;
     column-gap: 80px;
   }
 }

@@ -108,13 +108,13 @@
   }
 }
 
-.example__range-scale {
-  font-family: $oswald;
-}
+.example__slider {
+  margin: 0 auto;
+  width: 280px;
+  height: 256px;
 
-.example__range {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  font-family: $oswald;
+  @media (min-width: $medium) {
+    width: 560px;
+    height: 512px;
+  }
 }
