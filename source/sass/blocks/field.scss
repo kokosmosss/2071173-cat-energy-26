@@ -103,8 +103,5 @@
 
 .field__input:focus + .field__icon {
   color: $green-300;
-}
-
-.field__input:focus+.field__icon {
   stroke: $green-300;
 }
