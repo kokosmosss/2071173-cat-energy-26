@@ -1,6 +1,7 @@
 .example {
   background-image: linear-gradient($grey-350, $grey-350);
   background-repeat: no-repeat;
+  padding-bottom: 28px;
 
   @media (min-width: $medium) {
     background-size: 100% 384px;
@@ -40,7 +41,8 @@
   line-height: 40px;
   font-family: $oswald;
   font-weight: 400;
-  margin: 5px 0 40px;
+  padding-top: 25px;
+  margin: 0 0 40px;
 
   @media (min-width: $medium) {
     font-size: 60px;
@@ -109,7 +111,7 @@
 }
 
 .example__slider {
-  margin: 0 auto;
+  margin: 0 auto 30px;
   width: 280px;
   height: 256px;
 

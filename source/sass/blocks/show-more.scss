@@ -1,13 +1,14 @@
 .show-more {
   padding: 25px 20px;
-  background-image: url("source/img/icons/plus.svg");
+  background-image: url("../img/sprite.svg#plus");
   background-repeat: no-repeat;
   background-position: center top 25px;
+  background-size: 50px;
 
   @media (min-width: $medium) {
     padding: 44px 36px 38px;
     border: 2px solid $grey-100;
-    background-size: 60px 60px;
+    background-size: 70px;
     background-position: center top 51px;
   }
 

@@ -57,7 +57,7 @@
 .field__input--icon {
   grid-column: 2 / -1;
   grid-row: 1 / -1;
-  padding-right: 40px;
+  padding-right: 57px;
 }
 
 .field__input:hover {
@@ -105,10 +105,6 @@
   color: $green-300;
 }
 
-// .field__input:focus+.field__icon {
-//   stroke: $green-300;
-// }
-
-// .field__input:focus+.field__icon path {
-//   stroke: $green-300;
-// }
+.field__input:focus+.field__icon {
+  stroke: $green-300;
+}
