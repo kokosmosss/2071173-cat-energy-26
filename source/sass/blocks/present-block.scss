@@ -1,7 +1,7 @@
 .present-block {
   padding: 186px 61px 43px 58px;
   text-align: center;
-  background-image: url("../img/present.svg"), url("../img/index/present-block.png");
+  background-image: url("../img/sprite.svg#present"), url("../img/index/present-block.png");
   background-repeat: no-repeat;
   background-size: auto, cover;
   background-color: $green-300;
@@ -10,7 +10,7 @@
   @media (min-width: $medium) {
     padding: 71px 124px 69px 422px;
     text-align: start;
-    background-size: 70px 82px, cover;
+    background-size: 91px 82px, cover;
     background-position: left 72px center, center bottom -235px;
   }
 
@@ -22,7 +22,7 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/icons/present.svg"), url("../img/index/present-block@2x.png");
+    background-image: url("../img/sprite.svg#present"), url("../img/index/present-block@2x.png");
   }
 }
 

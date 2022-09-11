@@ -11,7 +11,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import { deleteAsync } from 'del';
-import svgSprite from 'gulp-svg-sprite';
+import { stacksvg } from 'gulp-stacksvg';
 
 // Styles
 
@@ -77,17 +77,12 @@ const svg = (done) => {
 }
 
 export const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
+  return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: 'sprite.svg',
-          dest: '.',
-        }
-      }
-    }))
-    .pipe(gulp.dest("build/img"));
+    .pipe(stacksvg(
+      { output: 'sprite' }
+    ))
+    .pipe(gulp.dest('build/img'));
 }
 
 // Copy

@@ -12,9 +12,9 @@
     background-position: center top 51px;
   }
 
-  @media (min-width: $medium) {
+  @media (min-width: $large) {
     padding: 52px 43px 38px;
-    background-position: center top 61px;
+    background-position: center top 23px;
   }
 }
 
@@ -31,8 +31,12 @@
   @media (min-width: $medium) {
     font-size: 20px;
     line-height: 22px;
-    padding: 117px 0 0;
+    padding: 119px 36px 0;
     margin: 0 0 23px;
+  }
+
+  @media (min-width: $large) {
+    padding: 110px 0 0;
   }
 }
 
@@ -46,6 +50,10 @@
   @media (min-width: $medium) {
     font-size: 16px;
     line-height: 18px;
-    margin: 0 0 62px;
+    margin: 0 0 85px;
+  }
+
+  @media (min-width: $large) {
+    margin: 0 0 69px;
   }
 }

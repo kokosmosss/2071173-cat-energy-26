@@ -49,11 +49,12 @@
   stroke: $green-300;
 }
 
-.slider__image-wrapper {
-  width: 0;
+.slider__image-wrapper-before {
+  width: 50%;
 }
 
-.slider__image-wrapper--after {
+.slider__image-wrapper-after {
+  width: 0;
   flex-grow: 1;
 }
 

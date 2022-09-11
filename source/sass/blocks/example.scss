@@ -1,16 +1,16 @@
 .example {
   background-image: linear-gradient($grey-350, $grey-350);
   background-repeat: no-repeat;
-  padding-bottom: 28px;
+  padding-bottom: 11px;
 
   @media (min-width: $medium) {
-    background-size: 100% 384px;
+    background-size: 100% 462px;
     background-position: bottom;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $large) {
-    background-size: 100% 462px;
-    background-position: bottom;
+    padding-bottom: 12px;
   }
 }
 
@@ -28,11 +28,12 @@
   @media (min-width: $medium) {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 51px;
+    margin: 0 0 52px;
   }
 
   @media (min-width: $large) {
-    margin: 0 0 69px;
+    padding-right: 133px;
+    margin: 0 0 64px;
   }
 }
 
@@ -41,12 +42,13 @@
   line-height: 40px;
   font-family: $oswald;
   font-weight: 400;
-  padding-top: 25px;
+  padding-top: 29px;
   margin: 0 0 40px;
 
   @media (min-width: $medium) {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 0;
     margin: 0 0 63px;
   }
 
@@ -74,7 +76,7 @@
   }
 
   @media (min-width: $large) {
-    margin-bottom: 75px;
+    margin-bottom: 47px;
   }
 }
 
@@ -84,15 +86,22 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 10px 0 17px;
 
   @media (min-width: $medium) {
     font-size: 20px;
     text-align: end;
+
+    span {
+        margin-top: 9px;
+      }
   }
 
   @media (min-width: $large) {
+    margin: 4px 0 17px;
+
     span {
+      margin-top: 0;
       margin-left: 63px;
     }
   }
