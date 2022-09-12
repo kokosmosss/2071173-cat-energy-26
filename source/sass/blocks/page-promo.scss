@@ -31,7 +31,7 @@
     top: -10px;
     left: 50%;
     bottom: 0;
-    height: 678px;
+    height: 704px;
     background-color: $grey-650;
   }
 
@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $medium) {
-    padding: 68px 90px 526px 116px;
+    padding: 64px 90px 506px 116px;
     background-image: url("../img/index/promo-large.png");
     background-size: 709px 609px;
     background-position: center bottom;
@@ -70,7 +70,7 @@
   }
 
   @media (min-width: $large) {
-    padding: 122px 110px 186px 190px;
+    padding: 110px 110px 186px 190px;
     margin-bottom: 82px;
     background-image: url("../img/index/promo-medium.png");
     background-position: top 40px left 559px;
@@ -122,9 +122,8 @@
 }
 
 .page-promo__button {
-  width: 280px;
-
   @media (max-width: ($medium - 1px)) {
+    width: 280px;
     margin: 0 auto;
   }
 }

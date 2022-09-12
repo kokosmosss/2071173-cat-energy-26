@@ -66,6 +66,9 @@
   height: 2px;
   background-color: $black;
   box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  transition-property: box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 
 .page-header__toggle--close {

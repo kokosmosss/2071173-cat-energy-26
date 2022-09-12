@@ -8,7 +8,7 @@
   padding: 26px 20px;
 
   @media (min-width: $medium) {
-    padding: 61px 70px;
+    padding: 58px 70px;
     grid-template-columns: 171px 163px;
     justify-content: space-between;
   }
@@ -54,6 +54,11 @@
   @media (min-width: $medium) {
     font-size: 16px;
     text-align: end;
+
+    span {
+      display: block;
+      padding-top: 20px;
+    }
   }
 }
 

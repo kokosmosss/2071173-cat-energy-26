@@ -23,7 +23,7 @@
   z-index: -1;
 
   @media (min-width: $medium) {
-    top: 80px;
+    top: 92px;
   }
 
   @media (min-width: $large) {
@@ -44,12 +44,12 @@
   @media (min-width: $medium) {
     font-size: 36px;
     line-height: 36px;
-    padding: 60px 36px 80px 36px;
+    padding: 70px 36px 80px 36px;
     margin: 0;
   }
 
   @media (min-width: $large) {
-    padding: 68px 35px 81px 40px;
+    padding: 75px 35px 81px 40px;
     margin: 0 -35px 0 -40px;
   }
 }

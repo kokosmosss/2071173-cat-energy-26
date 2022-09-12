@@ -12,6 +12,7 @@
     padding: 15px 0;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    column-gap: 84px;
   }
 }
 
@@ -73,7 +74,7 @@
 
 .card-adds__specs-number {
   @media (min-width: $medium) {
-    margin-right: -60px;
+    margin-right: -80px;
     margin-left: auto;
   }
 
@@ -86,6 +87,6 @@
   justify-self: end;
 
   @media (min-width: $large) {
-    margin-right: -30px;
+    margin-right: -44px;
   }
 }

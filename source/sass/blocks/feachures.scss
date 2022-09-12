@@ -23,17 +23,19 @@
   @media (min-width: $medium) {
     font-size: 16px;
     line-height: 24px;
+    padding-right: 79px;
   }
 
   @media (min-width: $large) {
     margin-bottom: 57px;
+    padding-right: 0;
   }
 }
 
 .feachures__list {
   display: grid;
-  gap: 24px;
-  margin-bottom: 49px;
+  gap: 18px;
+  padding-bottom: 48px;
   counter-reset: feachures__counter;
 
   @media (min-width: $medium) {
@@ -77,6 +79,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $green-300;
+  background-size: 31px;
 
   @media (min-width: $medium) {
     display: block;
@@ -87,19 +90,19 @@
 }
 
 .feachures__item--leaf::before {
-  background-image: url("../img/icons/leaf.svg");
+  background-image: url("../img/sprite.svg#leaf");
 }
 
 .feachures__item--water::before {
-  background-image: url("../img/icons/water.svg");
+  background-image: url("../img/sprite.svg#water");
 }
 
 .feachures__item--food::before {
-  background-image: url("../img/icons/food.svg");
+  background-image: url("../img/sprite.svg#food");
 }
 
 .feachures__item--time::before {
-  background-image: url("../img/icons/time.svg");
+  background-image: url("../img/sprite.svg#time");
 }
 
 .feachures__item::after {
