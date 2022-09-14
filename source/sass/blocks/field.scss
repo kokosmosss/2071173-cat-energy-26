@@ -1,6 +1,7 @@
 .field {
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: auto 1fr;
+  grid-auto-flow: row;
   align-items: center;
   z-index: 0;
 }
@@ -26,6 +27,7 @@
   text-transform: uppercase;
   color: $grey-600;
   margin-right: 12px;
+  max-width: 118px;
 
   @media (min-width: $medium) {
     font-size: 20px;
@@ -35,11 +37,10 @@
 }
 
 .field__input {
-  padding: 11px 15px;
-  border: none;
+  padding: 11px 14px;
+  border: 1px solid $grey-340;
   outline: none;
   margin: 0;
-  box-shadow: 0 0 0 1px $grey-340;
   display: block;
   font-family: $oswald;
   min-width: 0;
@@ -65,12 +66,12 @@
 }
 
 .field__input:focus {
-  box-shadow: 0 0 0 2px $grey-600;
+  border-color: $grey-600;
   outline: none;
 }
 
 .field__input--error {
-  box-shadow: 0 0 0 2px $pink-400;
+  border-color: $pink-400;
 }
 
 .field__input--error + .field__icon {
@@ -78,7 +79,7 @@
 }
 
 .field--textarea {
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
 
   @media (min-width: $medium) {
     margin-bottom: 68px;
