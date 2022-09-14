@@ -8,13 +8,13 @@
   @media (min-width: $medium) {
     padding: 44px 36px 38px;
     border: 2px solid $grey-100;
-    background-size: 70px;
-    background-position: center top 51px;
+    background-size: 56px;
+    background-position: center top 46px;
   }
 
   @media (min-width: $large) {
     padding: 52px 43px 38px;
-    background-position: center top 23px;
+    background-position: center top 32px;
   }
 }
 
@@ -51,6 +51,7 @@
     font-size: 16px;
     line-height: 18px;
     margin: 0 0 85px;
+    padding: 0 20px;
   }
 
   @media (min-width: $large) {

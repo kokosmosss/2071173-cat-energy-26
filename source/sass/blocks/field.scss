@@ -8,12 +8,12 @@
 .field__title {
   font-size: 24px;
   line-height: 26px;
-  margin: 0 0 34px;
+  margin: -8px 0 37px;
 
   @media (min-width: $medium) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 66px;
+    margin: 0 0 74px;
   }
 
   @media (min-width: $large) {
@@ -35,7 +35,7 @@
 }
 
 .field__input {
-  padding: 11px 18px;
+  padding: 11px 15px;
   border: none;
   outline: none;
   margin: 0;
@@ -97,8 +97,12 @@
   grid-column: 2 / -1;
   grid-row: 1 / -1;
   justify-self: end;
-  margin: 20px;
+  margin: 13px;
   z-index: -1;
+
+  @media (min-width: $medium) {
+      margin: 17px;
+    }
 }
 
 .field__input:focus + .field__icon {

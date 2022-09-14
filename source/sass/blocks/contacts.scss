@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $large) {
-    padding: 56px 80px;
+    padding: 60px 80px;
     width: 565px;
     position: absolute;
     background-color: $white;
@@ -57,8 +57,13 @@
 
     span {
       display: block;
-      padding-top: 20px;
+      margin-top: 20px;
     }
+  }
+
+  @media (min-width: $large) {
+    text-align: start;
+    padding-left: 8px;
   }
 }
 
