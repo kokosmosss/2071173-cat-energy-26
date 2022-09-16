@@ -14,9 +14,10 @@
     justify-content: space-between;
     border: none;
   }
-    @media (min-width: $large) {
-      padding: 50px 0 0;
-    }
+
+  @media (min-width: $large) {
+    padding: 50px 0 0;
+  }
 }
 
 .page-header--closed {

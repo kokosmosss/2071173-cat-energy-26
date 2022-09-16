@@ -9,6 +9,14 @@
   @media (max-width: ($medium - 1px)) {
     border-bottom: 1px solid $grey-330;
   }
+
+  @media (min-width: $medium) {
+    margin: 0 19px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .nav-list__item:first-child {
@@ -34,16 +42,6 @@
   @media (min-width: $large) {
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-.nav-list__item {
-  @media (min-width: $medium) {
-    margin: 0 19px;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
