@@ -7,7 +7,7 @@ if (window.innerWidth < 768) {
 }
 
 headerToggle.addEventListener('click', function () {
-  if (header.classList.contains('page-header--closed') && window.innerWidth < 768) {
+  if (header.classList.contains('page-header--closed')) {
     header.classList.remove('page-header--closed');
     headerToggle.classList.add('page-header__toggle--close');
   } else {
