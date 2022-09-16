@@ -34,7 +34,7 @@
 
 .feachures__list {
   display: grid;
-  gap: 18px;
+  gap: 20px;
   padding-bottom: 48px;
   counter-reset: feachures__counter;
 
@@ -124,6 +124,6 @@
   }
 
   @media (min-width: $large) {
-    right: 28px;
+    right: 22px;
   }
 }

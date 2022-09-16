@@ -58,10 +58,10 @@
   }
 
   @media (min-width: $medium) {
-    padding: 64px 90px 506px 116px;
+    padding: 64px 90px 505px 118px;
     background-image: url("../img/index/promo-large.png");
     background-size: 709px 609px;
-    background-position: center bottom;
+    background-position: center top 264px;
 
 
     @media (min-resolution: 2dppx) {
@@ -70,10 +70,10 @@
   }
 
   @media (min-width: $large) {
-    padding: 110px 110px 186px 190px;
+    padding: 110px 80px 186px;
     margin-bottom: 82px;
     background-image: url("../img/index/promo-medium.png");
-    background-position: top 29px left 559px;
+    background-position: top 29px left 448px;
     background-size: 552px 499px;
 
     @media (min-resolution: 2dppx) {

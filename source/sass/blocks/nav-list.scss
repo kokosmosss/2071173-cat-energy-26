@@ -27,14 +27,23 @@
   text-align: center;
 
   @media (min-width: $medium) {
-    padding: 18px 0 9px;
+    padding: 21px 0 8px;
     font-weight: 400;
-    margin: 0 15px;
   }
 
   @media (min-width: $large) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.nav-list__item {
+  @media (min-width: $medium) {
+    margin: 0 19px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 

@@ -20,10 +20,6 @@
   @media (min-width: $medium) {
     padding: 0 30px;
   }
-
-  @media (min-width: $large) {
-    padding: 0 110px;
-  }
 }
 
 .page-main__promo {
@@ -43,7 +39,7 @@
   }
 
   @media (min-width: $large) {
-    padding: 77px 110px 0;
+    padding: 77px 0 0;
     margin-bottom: 82px;
   }
 }

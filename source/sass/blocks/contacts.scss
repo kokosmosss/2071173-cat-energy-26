@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.contacts--grey {
+  background-color: $grey-100;
+}
+
 .contacts__text {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -21,10 +25,6 @@
     left: calc(50% - 610px);
     top: 95px;
   }
-}
-
-.contacts__text--grey {
-  background-color: $grey-100;
 }
 
 .contacts__intro {

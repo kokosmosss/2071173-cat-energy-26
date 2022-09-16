@@ -9,7 +9,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0;
-    margin-bottom: 72px;
+    margin-bottom: 76px;
     grid-column: span 2;
   }
 }
@@ -33,13 +33,13 @@
 
   @media (min-width: $medium) {
     padding-bottom: 0;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: $large) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
+    column-gap: 76px;
     margin-bottom: 47px;
   }
 }

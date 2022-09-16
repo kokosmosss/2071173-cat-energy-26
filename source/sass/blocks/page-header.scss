@@ -6,6 +6,7 @@
   border-bottom: 1px solid $white;
 
   @media (min-width: $medium) {
+    padding: 21px 29px 0;
     font-size: 18px;
     line-height: 24px;
     display: flex;
@@ -13,6 +14,9 @@
     justify-content: space-between;
     border: none;
   }
+    @media (min-width: $large) {
+      padding: 50px 0 0;
+    }
 }
 
 .page-header--closed {
@@ -24,13 +28,14 @@
 .page-header__logo {
   grid-template-columns: 1fr max-content;
   grid-column: span 2;
+  margin-top: 4px;
 }
 
 .page-header__menu {
-  padding: 10px 20px 17px;
+  padding: 10px 20px 13px;
   min-width: 280px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 101px 1fr;
 
   @media (min-width: $medium) {
     padding: 0;
@@ -42,9 +47,9 @@
 
 .page-header__toggle {
   display: block;
-  width: 32px;
-  height: 32px;
-  padding: 4px 4px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
   background-color: inherit;
   cursor: pointer;
   border: none;
@@ -60,8 +65,8 @@
 .page-header__toggle::before {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 5px;
+  left: 10px;
   width: 24px;
   height: 2px;
   background-color: $black;
@@ -122,8 +127,10 @@
 }
 
 // при закрытом меню кнопка-бургер показана
-.page-header--closed .page-header__toggle {
-  display: block;
+@media (max-width: ($medium - 1px)) {
+  .page-header--closed .page-header__toggle {
+    display: block;
+  }
 }
 
 .page-header--closed .page-header__nav {

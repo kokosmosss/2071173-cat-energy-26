@@ -6,7 +6,11 @@
   @media (min-width: $medium) {
     display: block;
     padding: 17px 40px 39px;
-    background-image: linear-gradient(to bottom, $white 89px, $grey-100 89px);
+    background-image: linear-gradient(to bottom, $white 80px, $grey-100 80px);
+  }
+
+  @media (min-width: $large) {
+    background-image: linear-gradient(to bottom, $white 90px, $grey-100 90px);
   }
 }
 
