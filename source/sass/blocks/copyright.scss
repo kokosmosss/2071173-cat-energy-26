@@ -17,6 +17,10 @@
   @media (min-width: $medium) {
     justify-content: end;
   }
+
+  @media (min-width: $large) {
+    padding-top: 10px;
+  }
 }
 
 .copyright__link:hover {
