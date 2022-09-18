@@ -129,11 +129,11 @@
 
 // при закрытом меню кнопка-бургер показана
 @media (max-width: ($medium - 1px)) {
-  .page-header--closed .page-header__toggle {
+  .page-header--closed:not(.page-header--no-js) .page-header__toggle {
     display: block;
   }
-}
 
-.page-header--closed .page-header__nav {
-  display: none;
+  .page-header--closed:not(.page-header--no-js) .page-header__nav {
+    display: none;
+  }
 }

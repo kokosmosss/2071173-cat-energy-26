@@ -17,13 +17,13 @@
 
   @media (min-width: $medium) {
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 61px;
     margin: auto;
   }
 
   @media (min-width: $large) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 47px 77px;
+    gap: 58px 76px;
   }
 }
 
@@ -33,7 +33,7 @@
   }
 
   @media (min-width: $large) {
-    margin-top: 89px;
+    margin-top: 84px;
   }
 }
 
