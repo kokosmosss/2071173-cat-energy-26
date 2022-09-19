@@ -1,4 +1,4 @@
-.feachures__title {
+.featchures__title {
   font-size: 36px;
   line-height: 40px;
   font-family: $oswald;
@@ -16,7 +16,7 @@
   }
 }
 
-.feachures__description {
+.featchures__description {
   color: $grey-600;
   margin: 0;
 
@@ -32,7 +32,7 @@
   }
 }
 
-.feachures__list {
+.featchures__list {
   display: grid;
   gap: 20px;
   padding-bottom: 48px;
@@ -52,7 +52,7 @@
   }
 }
 
-.feachures__item {
+.featchures__item {
   display: flex;
   counter-increment: feachures__counter;
   position: relative;
@@ -70,7 +70,7 @@
   }
 }
 
-.feachures__item::before {
+.featchures__item::before {
   content: "";
   flex-shrink: 0;
   width: 60px;
@@ -89,23 +89,23 @@
   }
 }
 
-.feachures__item--leaf::before {
+.featchures__item--leaf::before {
   background-image: url("../img/sprite.svg#leaf");
 }
 
-.feachures__item--water::before {
+.featchures__item--water::before {
   background-image: url("../img/sprite.svg#water");
 }
 
-.feachures__item--food::before {
+.featchures__item--food::before {
   background-image: url("../img/sprite.svg#food");
 }
 
-.feachures__item--time::before {
+.featchures__item--time::before {
   background-image: url("../img/sprite.svg#time");
 }
 
-.feachures__item::after {
+.featchures__item::after {
   font-family: $oswald;
 
   @media (min-width: $medium) {
