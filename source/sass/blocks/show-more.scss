@@ -3,18 +3,17 @@
   background-image: url("../img/sprite.svg#plus");
   background-repeat: no-repeat;
   background-position: center top 25px;
-  background-size: 50px;
+  background-size: 30px 30px;
 
   @media (min-width: $medium) {
     padding: 44px 36px 38px;
     border: 2px solid $grey-100;
-    background-size: 70px;
-    background-position: center top 51px;
+    background-size: 60px 60px;
+    background-position: center top 54px;
   }
 
   @media (min-width: $large) {
-    padding: 52px 43px 38px;
-    background-position: center top 23px;
+    padding: 52px 34px 38px;
   }
 }
 
@@ -51,9 +50,10 @@
     font-size: 16px;
     line-height: 18px;
     margin: 0 0 85px;
+    padding: 0 20px;
   }
 
   @media (min-width: $large) {
-    margin: 0 0 69px;
+    padding: 0;
   }
 }

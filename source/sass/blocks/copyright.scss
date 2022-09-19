@@ -1,5 +1,5 @@
 .copyright {
-  padding-top: 16px;
+  padding-top: 21px;
 
   @media (min-width: $medium) {
     padding-top: 0;
@@ -16,6 +16,10 @@
 
   @media (min-width: $medium) {
     justify-content: end;
+  }
+
+  @media (min-width: $large) {
+    padding-top: 10px;
   }
 }
 

@@ -2,29 +2,29 @@
   position: relative;
 }
 
+.contacts--grey {
+  background-color: $grey-100;
+}
+
 .contacts__text {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 26px 20px;
 
   @media (min-width: $medium) {
-    padding: 58px 70px;
+    padding: 63px 70px;
     grid-template-columns: 171px 163px;
     justify-content: space-between;
   }
 
   @media (min-width: $large) {
-    padding: 56px 80px;
+    padding: 60px 80px;
     width: 565px;
     position: absolute;
     background-color: $white;
     left: calc(50% - 610px);
     top: 95px;
   }
-}
-
-.contacts__text--grey {
-  background-color: $grey-100;
 }
 
 .contacts__intro {
@@ -57,8 +57,13 @@
 
     span {
       display: block;
-      padding-top: 20px;
+      margin-top: 20px;
     }
+  }
+
+  @media (min-width: $large) {
+    text-align: start;
+    padding-left: 8px;
   }
 }
 

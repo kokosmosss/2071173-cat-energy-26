@@ -5,8 +5,12 @@
 
   @media (min-width: $medium) {
     display: block;
-    padding: 17px 40px 39px;
-    background-image: linear-gradient(to bottom, $white 89px, $grey-100 89px);
+    padding: 18px 40px 39px;
+    background-image: linear-gradient(to bottom, $white 80px, $grey-100 80px);
+  }
+
+  @media (min-width: $large) {
+    background-image: linear-gradient(to bottom, $white 90px, $grey-100 90px);
   }
 }
 
@@ -15,48 +19,32 @@
   align-self: center;
   justify-self: center;
   display: block;
-}
 
-.catalog__item:nth-child(2n+1) .card__link {
   @media (min-width: $medium) {
-    margin-top: 18px;
+    width: 244px;
+    height: 192px;
   }
-}
 
-.catalog__item:nth-child(2n) .card__link {
-  @media (min-width: $medium) {
-    margin-top: -10px;
+  @media (min-width: $large) {
+    width: 168px;
+    height: 204px;
   }
 }
 
 .card__image {
   display: block;
   margin-bottom: 10px;
-}
+  max-height: 100%;
 
-.catalog__item:nth-child(2n+1) .card__image {
   @media (min-width: $medium) {
     width: 161px;
-    height: 172px;
-    margin: 0 auto 11px;
+    height: 178px;
+    margin: 0 auto;
   }
 
   @media (min-width: $large) {
-    margin-bottom: 53px;
-  }
-}
-
-.catalog__item:nth-child(2n) .card__image {
-  @media (min-width: $medium) {
     width: 168px;
-    height: 200px;
-    margin: 0 auto 36px;
-  }
-
-  @media (min-width: $large) {
-    width: 172px;
-    height: 201px;
-    margin-bottom: 46px;
+    height: 190px;
   }
 }
 
@@ -73,7 +61,7 @@
 
   @media (min-width: $medium) {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     margin-top: 33px;
     font-size: 20px;
     line-height: 24px;
@@ -83,7 +71,8 @@
   @media (min-width: $large) {
     line-height: 21px;
     padding: 0 15px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    margin-top: 29px;
   }
 }
 

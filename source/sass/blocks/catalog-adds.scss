@@ -17,7 +17,7 @@
   height: 2px;
   width: 100%;
   background-color: $green-300;
-  top: 40px;
+  top: 37px;
   left: 0;
   right: 0;
   z-index: -1;
@@ -36,7 +36,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  padding: 25px 22px 36px;
+  padding: 22px 22px 36px;
   margin: 0 -22px;
   display: inline-block;
   background-color: $white;
@@ -44,12 +44,12 @@
   @media (min-width: $medium) {
     font-size: 36px;
     line-height: 36px;
-    padding: 70px 36px 80px 36px;
+    padding: 70px 36px 78px;
     margin: 0;
   }
 
   @media (min-width: $large) {
-    padding: 75px 35px 81px 40px;
+    padding: 75px 35px 83px 40px;
     margin: 0 -35px 0 -40px;
   }
 }

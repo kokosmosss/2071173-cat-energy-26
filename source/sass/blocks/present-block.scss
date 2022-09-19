@@ -1,9 +1,9 @@
 .present-block {
-  padding: 186px 61px 43px 58px;
+  padding: 189px 61px 43px 58px;
   text-align: center;
   background-image: url("../img/sprite.svg#present"), url("../img/index/present-block.png");
   background-repeat: no-repeat;
-  background-size: auto, cover;
+  background-size: 80px 80px, cover;
   background-color: $green-300;
   background-position: top 58px center, center;
 
@@ -16,7 +16,7 @@
 
   @media (min-width: $large) {
     text-align: center;
-    background-size: auto, cover;
+    background-size: 80px 80px, cover;
     padding: 186px 36px 24px;
     background-position: top 58px center, center;
   }

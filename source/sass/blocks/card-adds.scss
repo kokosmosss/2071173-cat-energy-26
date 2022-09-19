@@ -2,7 +2,7 @@
   padding: 12px 0 18px;
 
   @media (min-width: $medium) {
-    padding: 26px 38px 28px;
+    padding: 26px 38px 27px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 60px;
@@ -58,6 +58,7 @@
     grid-template-columns: 1fr 70px;
     grid-column: span 1;
     margin: 0;
+    padding-top: 10px;
     column-gap: 0;
   }
 }

@@ -13,10 +13,10 @@
 .logo__text {
   justify-self: center;
 
-  @media (min-width: $medium) {
-    width: 103px;
-    height: 23px;
-  }
+  // @media (min-width: $medium) {
+  //   width: 103px;
+  //   height: 23px;
+  // }
 
   @media (min-width: $large) {
     width: 118px;
@@ -36,7 +36,7 @@
   @media (min-width: $medium) {
     width: 61px;
     height: 52px;
-    margin-right: 20px;
+    margin-right: 12px;
   }
 
   @media (min-width: $large) {

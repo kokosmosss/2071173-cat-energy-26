@@ -13,7 +13,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header page-header page-header--no-js center-container">
+  <header class="page__header page-header page-header--closed page-header--no-js center-container">
     <div class="page-header__menu">
       <a class="page-header__logo logo" href="index.html">
         <picture>
@@ -21,14 +21,14 @@
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="logo__image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Cat Energy.">
         </picture>
-        <img class="logo__text" src="img/logo-text.svg" width="101" height="18" aria-hidden="true">
+        <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="" aria-hidden="true">
       </a>
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
-    <nav class="page-header__nav page-nav">
-      <ul class="page-nav__list nav-list clear-list">
+    <nav class="page-header__nav">
+      <ul class="nav-list clear-list">
         <li class="nav-list__item">
           <a class="nav-list__link" href="index.html">
             Главная
@@ -52,7 +52,7 @@
       <h1 class="page-main__form-title">Подбор программы</h1>
       <p class="page-main__form-intro">Заполните анкету, и мы подберем <br>
         программу питания для вашего кота</p>
-      <form class="program-form" method="post" aсtion="https://echo.htmlacademy.ru/">
+      <form class="program-form" method="post" action="https://echo.htmlacademy.ru/">
         <div class="program-form__container">
           <fieldset class="program-form__group form-group">
             <legend class="visually-hidden">Данные кота</legend>
@@ -89,8 +89,7 @@
         <fieldset class="program-form__group program-form__group--line form-group form-group--small">
           <legend class="form-group__title">
             <span class="program-form__title-wrapper">
-              Контактные данные <br>
-              (владельца кота)
+              Контактные данные&nbsp;<br>(владельца кота)
             </span>
           </legend>
           <p class="form-group__area field">
@@ -142,12 +141,12 @@
       </form>
     </div>
   </main>
-  <aside class="page__contacts contacts contacts__text--grey">
+  <aside class="page__contacts contacts contacts--grey">
     <h2 class="visually-hidden">Контакты</h2>
     <div class="contacts__text">
       <p class="contacts__intro">
         Приглашаем
-        к сотрудничеству
+        к&nbsp;сотрудничеству
         дилеров!
       </p>
       <address class="contacts__address">

@@ -29,6 +29,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 52px;
+    padding-right: 8px;
   }
 
   @media (min-width: $large) {
@@ -42,7 +43,7 @@
   line-height: 40px;
   font-family: $oswald;
   font-weight: 400;
-  padding-top: 29px;
+  padding-top: 25px;
   margin: 0 0 40px;
 
   @media (min-width: $medium) {
@@ -91,9 +92,11 @@
   @media (min-width: $medium) {
     font-size: 20px;
     text-align: end;
+    margin: 11px 0 10px;
 
     span {
-      margin-top: 9px;
+      display: block;
+      margin-top: 10px;
     }
   }
 
@@ -101,7 +104,7 @@
     margin: 4px 0 17px;
 
     span {
-      margin-top: 0;
+      display: inline;
       margin-left: 63px;
     }
   }
