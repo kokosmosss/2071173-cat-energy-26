@@ -21,7 +21,6 @@
   display: block;
 
   @media (min-width: $medium) {
-    width: 244px;
     height: 192px;
   }
 
@@ -40,11 +39,14 @@
     width: 161px;
     height: 178px;
     margin: 0 auto;
+    padding-top: 6px;
   }
 
   @media (min-width: $large) {
     width: 168px;
     height: 190px;
+    padding-top: 0;
+    padding-bottom: 4px;
   }
 }
 
